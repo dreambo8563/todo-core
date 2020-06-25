@@ -8,10 +8,9 @@ import {
 
 describe('task', () => {
   it('constructor', () => {
-    const todo: Task<string> = new TextTask('1', 'abc');
+    const todo: Task<string> = new TextTask('1', 'abc', new Date());
     expect(todo.id).toEqual('1');
     expect(todo.content).toEqual('abc');
-
     expect(todo instanceof Task).toBe(true);
     expect(todo instanceof TextTask).toBe(true);
   });
