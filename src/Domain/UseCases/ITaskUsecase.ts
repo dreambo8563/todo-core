@@ -1,28 +1,23 @@
 import {
-  ITaskItem,
   TaskContentType,
+  ITaskItem,
   TextTask,
   AudioTask,
 } from '../Entities/ITaskItem';
 
-// task list use cases
-export interface ITaskListUsecase {
-  // searchByKeywords(keywords: string): Array<ITaskItem>;
-  newTask(
+export interface ITaskUsecase {
+  createTask(
     id: string,
     content: TaskContentType,
     finishDate?: Date | null
   ): ITaskItem;
-  // getTask(id: string): ITaskItem;
-  // updateTask(t: ITaskItem): ITaskItem;
-  // deleteTask(t: ITaskItem): void;
 }
 
-export class TaskListUsecase implements ITaskListUsecase {
+export class TaskUsecase implements ITaskUsecase {
   // constructor(parameters) {
   //TODO: Dependency Injection - API service...
   // }
-  newTask(id: string, content: TaskContentType, finishDate?: Date | null) {
+  createTask(id: string, content: TaskContentType, finishDate?: Date | null) {
     // detail to implement the logic
     //* Factory Pattern
     if (typeof content === 'string') {
