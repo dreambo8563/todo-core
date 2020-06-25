@@ -1,5 +1,3 @@
-import { ETaskStatus } from '../Enums/Status';
-
 export interface ITaskItem {
   id: string;
   content: TaskContentType;
@@ -16,18 +14,25 @@ export interface ILockable {
 }
 
 type RichTaskType = string;
-export type TaskContentType = string | URL | RichTaskType;
+type TextTaskType = string;
+type MediaTaskType = URL;
+export type TaskContentType = TextTaskType | MediaTaskType | RichTaskType;
 
 export interface Playable {
   play(): void;
   pause(): void;
   stop(): void;
 }
-export class Task implements ITaskItem {
+export enum ETaskStatus {
+  unFinished,
+  Finished,
+}
+
+export class Task<T extends TaskContentType> implements ITaskItem {
   id: string = '';
-  content: TaskContentType;
+  content: T;
   status = ETaskStatus.unFinished;
-  constructor(id: string, content: TaskContentType) {
+  constructor(id: string, content: T) {
     this.id = id;
     this.content = content;
   }
@@ -43,24 +48,21 @@ export class Task implements ITaskItem {
     this.status = s;
   }
 }
-export class PeriodTask extends Task implements IPeriodLimit {
+export class PeriodTask<T extends TaskContentType> extends Task<T>
+  implements IPeriodLimit {
   finishDate: Date | null = null;
-  constructor(
-    id: string,
-    content: TaskContentType,
-    finishDate: Date | null = null
-  ) {
+  constructor(id: string, content: T, finishDate: Date | null = null) {
     super(id, content);
     this.finishDate = finishDate;
   }
 }
-export class TextTask extends Task {
-  // constructor(id: string, content: string) {
+export class TextTask extends Task<TextTaskType> {
+  // constructor(id: string, content: TextTaskType) {
   //   super(id, content);
   // }
 }
-export class AudioTask extends Task implements Playable {
-  // constructor(id: string, content: URL) {
+export class AudioTask extends Task<MediaTaskType> implements Playable {
+  // constructor(id: string, content: MediaTaskType) {
   //   super(id, content);
   // }
   play() {
@@ -75,8 +77,8 @@ export class AudioTask extends Task implements Playable {
   }
 }
 
-export class VideoTask extends Task {
-  // constructor(id: string, content: URL) {
+export class VideoTask extends Task<MediaTaskType> {
+  // constructor(id: string, content: MediaTaskType) {
   //   super(id, content);
   // }
 }

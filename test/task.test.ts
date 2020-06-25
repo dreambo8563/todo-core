@@ -3,12 +3,12 @@ import {
   ITaskItem,
   TextTask,
   AudioTask,
-} from '../src/Interfaces/ITaskItem';
-import { ETaskStatus } from '../src/Enums/Status';
+  ETaskStatus,
+} from '../src/Domain/Entities/ITaskItem';
 
 describe('task', () => {
   it('constructor', () => {
-    const todo: Task = new TextTask('1', 'abc');
+    const todo: Task<string> = new TextTask('1', 'abc');
     expect(todo.id).toEqual('1');
     expect(todo.content).toEqual('abc');
 
