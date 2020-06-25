@@ -4,5 +4,5 @@ local:
 	npm run start
 build:
 	npm run build
-test:
+ut:
 	npm run test
