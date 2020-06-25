@@ -13,10 +13,9 @@ export interface ILockable {
   locked: boolean;
 }
 
-type RichTaskType = string;
-type TextTaskType = string;
-type MediaTaskType = URL;
-export type TaskContentType = TextTaskType | MediaTaskType | RichTaskType;
+export type TextTaskType = string;
+export type MediaTaskType = URL;
+export type TaskContentType = TextTaskType | MediaTaskType;
 
 export interface Playable {
   play(): void;
@@ -56,12 +55,12 @@ export class PeriodTask<T extends TaskContentType> extends Task<T>
     this.finishDate = finishDate;
   }
 }
-export class TextTask extends Task<TextTaskType> {
+export class TextTask extends PeriodTask<TextTaskType> {
   // constructor(id: string, content: TextTaskType) {
   //   super(id, content);
   // }
 }
-export class AudioTask extends Task<MediaTaskType> implements Playable {
+export class AudioTask extends PeriodTask<MediaTaskType> implements Playable {
   // constructor(id: string, content: MediaTaskType) {
   //   super(id, content);
   // }
@@ -75,10 +74,4 @@ export class AudioTask extends Task<MediaTaskType> implements Playable {
   stop() {
     console.log('stop the audio');
   }
-}
-
-export class VideoTask extends Task<MediaTaskType> {
-  // constructor(id: string, content: MediaTaskType) {
-  //   super(id, content);
-  // }
 }
