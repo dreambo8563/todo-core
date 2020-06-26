@@ -4,21 +4,22 @@ import {
   TextTask,
   AudioTask,
 } from '../Entities/ITaskItem';
+import { TaskAPI } from '../../Interface/API/TaskAPI';
 
 export interface ITaskUsecase {
   createTask(
-    id: string,
     content: TaskContentType,
     finishDate?: Date | null
-  ): ITaskItem;
+  ): Promise<ITaskItem>;
 }
 
 export class TaskUsecase implements ITaskUsecase {
-  // constructor(parameters) {
-  //TODO: Dependency Injection - API service...
-  // }
-  createTask(id: string, content: TaskContentType, finishDate?: Date | null) {
+  //TODO: Dependency Injection - API/cache/log service...
+  constructor(private api: TaskAPI) {}
+  async createTask(content: TaskContentType, finishDate?: Date | null) {
     // detail to implement the logic
+    const res = await this.api.createTask(content);
+    const id = res.id;
     //* Factory Pattern
     if (typeof content === 'string') {
       // text task
