@@ -15,7 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --coverage",
     "lint": "tsdx lint src test --fix",
-    "doc":"typedoc",
+    "doc":"typedoc && touch docs/.nojekyll",
     "prepare": "tsdx build"
   },
   "peerDependencies": {},
