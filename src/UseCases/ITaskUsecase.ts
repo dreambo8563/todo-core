@@ -16,7 +16,6 @@ export class TaskUsecase implements ITaskUsecase {
     // detail to implement the logic
     const res = await this.api.createTask(content);
     const id = res.id;
-
     return this.repo.createTask(id, content, finishDate);
   }
 }

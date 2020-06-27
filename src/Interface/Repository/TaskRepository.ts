@@ -14,16 +14,12 @@ export interface ITaskRepository {
 }
 
 export class TaskRepository implements ITaskRepository {
-  createTask(
-    id: string,
-    content: TaskContentType,
-    finishDate: Date | null = null
-  ) {
+  createTask(id: string, content: TaskContentType, finishDate: Date | null) {
     if (typeof content === 'string') {
       //* Factory Pattern
-      return new TextTask(id, content, finishDate);
+      return new TextTask(id, content, finishDate) as TextTask;
     } else {
-      return new AudioTask(id, content, finishDate);
+      return new AudioTask(id, content, finishDate) as AudioTask;
     }
   }
 }

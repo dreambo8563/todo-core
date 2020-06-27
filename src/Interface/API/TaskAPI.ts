@@ -24,6 +24,7 @@ export class TaskAPI implements ITaskAPI {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
+      timeout: 30000,
     });
     return await response.json();
   }
