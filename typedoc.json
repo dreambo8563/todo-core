@@ -1,6 +1,6 @@
 {
     "inputFiles": ["./src"],
     "mode": "modules",
-    "out": "doc",
+    "out": "docs",
     "name":"todo-core API Documentation"
   }

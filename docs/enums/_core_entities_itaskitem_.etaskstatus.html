@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TaskListUsecase | todo-core API Documentation</title>
+	<title>ETaskStatus | todo-core API Documentation</title>
 	<meta name="description" content="Documentation for todo-core API Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,90 +56,54 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_usecases_itasklistusecase_.html">&quot;UseCases/ITaskListUsecase&quot;</a>
+					<a href="../modules/_core_entities_itaskitem_.html">&quot;core/Entities/ITaskItem&quot;</a>
 				</li>
 				<li>
-					<a href="_usecases_itasklistusecase_.tasklistusecase.html">TaskListUsecase</a>
+					<a href="_core_entities_itaskitem_.etaskstatus.html">ETaskStatus</a>
 				</li>
 			</ul>
-			<h1>Class TaskListUsecase</h1>
+			<h1>Enumeration ETaskStatus</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">TaskListUsecase</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_usecases_itasklistusecase_.itasklistusecase.html" class="tsd-signature-type">ITaskListUsecase</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_usecases_itasklistusecase_.tasklistusecase.html#tasklist" class="tsd-kind-icon">task<wbr>List</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_usecases_itasklistusecase_.tasklistusecase.html#addtask" class="tsd-kind-icon">add<wbr>Task</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_core_entities_itaskitem_.etaskstatus.html#finished" class="tsd-kind-icon">Finished</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_core_entities_itaskitem_.etaskstatus.html#unfinished" class="tsd-kind-icon">un<wbr>Finished</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="tasklist" class="tsd-anchor"></a>
-					<h3>task<wbr>List</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_core_entities_itaskitem_.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="finished" class="tsd-anchor"></a>
+					<h3>Finished</h3>
+					<div class="tsd-signature tsd-kind-icon">Finished<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/6f1d7a6/src/UseCases/ITaskListUsecase.ts#L13">UseCases/ITaskListUsecase.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/ff79fef/src/core/Entities/ITaskItem.ts#L27">core/Entities/ITaskItem.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addtask" class="tsd-anchor"></a>
-					<h3>add<wbr>Task</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Task<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../interfaces/_core_entities_itaskitem_.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_core_entities_itaskitem_.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_usecases_itasklistusecase_.itasklistusecase.html">ITaskListUsecase</a>.<a href="../interfaces/_usecases_itasklistusecase_.itasklistusecase.html#addtask">addTask</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/6f1d7a6/src/UseCases/ITaskListUsecase.ts#L17">UseCases/ITaskListUsecase.ts:17</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>t: <a href="../interfaces/_core_entities_itaskitem_.itaskitem.html" class="tsd-signature-type">ITaskItem</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_core_entities_itaskitem_.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="unfinished" class="tsd-anchor"></a>
+					<h3>un<wbr>Finished</h3>
+					<div class="tsd-signature tsd-kind-icon">un<wbr>Finished<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/ff79fef/src/core/Entities/ITaskItem.ts#L26">core/Entities/ITaskItem.ts:26</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -155,13 +119,13 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_interface_repository_taskrepository_.html">&quot;<wbr>Interface/<wbr>Repository/<wbr>Task<wbr>Repository&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_usecases_itasklistusecase_.html">&quot;<wbr>Use<wbr>Cases/ITask<wbr>List<wbr>Usecase&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_usecases_itaskusecase_.html">&quot;<wbr>Use<wbr>Cases/ITask<wbr>Usecase&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_core_entities_itaskitem_.html">&quot;core/<wbr>Entities/ITask<wbr>Item&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -173,21 +137,51 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_usecases_itasklistusecase_.tasklistusecase.html" class="tsd-kind-icon">Task<wbr>List<wbr>Usecase</a>
+					<li class="current tsd-kind-enum tsd-parent-kind-module">
+						<a href="_core_entities_itaskitem_.etaskstatus.html" class="tsd-kind-icon">ETask<wbr>Status</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_usecases_itasklistusecase_.tasklistusecase.html#tasklist" class="tsd-kind-icon">task<wbr>List</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_core_entities_itaskitem_.etaskstatus.html#finished" class="tsd-kind-icon">Finished</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_usecases_itasklistusecase_.tasklistusecase.html#addtask" class="tsd-kind-icon">add<wbr>Task</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_core_entities_itaskitem_.etaskstatus.html#unfinished" class="tsd-kind-icon">un<wbr>Finished</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_core_entities_itaskitem_.audiotask.html" class="tsd-kind-icon">Audio<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_core_entities_itaskitem_.periodtask.html" class="tsd-kind-icon">Period<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_core_entities_itaskitem_.task.html" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_core_entities_itaskitem_.texttask.html" class="tsd-kind-icon">Text<wbr>Task</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_usecases_itasklistusecase_.itasklistusecase.html" class="tsd-kind-icon">ITask<wbr>List<wbr>Usecase</a>
+						<a href="../interfaces/_core_entities_itaskitem_.ilockable.html" class="tsd-kind-icon">ILockable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_core_entities_itaskitem_.iperiodlimit.html" class="tsd-kind-icon">IPeriod<wbr>Limit</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_core_entities_itaskitem_.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_core_entities_itaskitem_.playable.html" class="tsd-kind-icon">Playable</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_core_entities_itaskitem_.html#mediatasktype" class="tsd-kind-icon">Media<wbr>Task<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_core_entities_itaskitem_.html#taskcontenttype" class="tsd-kind-icon">Task<wbr>Content<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_core_entities_itaskitem_.html#texttasktype" class="tsd-kind-icon">Text<wbr>Task<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
@@ -199,14 +193,12 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

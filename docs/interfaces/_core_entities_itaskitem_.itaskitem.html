@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Playable | todo-core API Documentation</title>
+	<title>ITaskItem | todo-core API Documentation</title>
 	<meta name="description" content="Documentation for todo-core API Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_core_entities_itaskitem_.html">&quot;core/Entities/ITaskItem&quot;</a>
 				</li>
 				<li>
-					<a href="_core_entities_itaskitem_.playable.html">Playable</a>
+					<a href="_core_entities_itaskitem_.itaskitem.html">ITaskItem</a>
 				</li>
 			</ul>
-			<h1>Interface Playable</h1>
+			<h1>Interface ITaskItem</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Playable</span>
+						<span class="target">ITaskItem</span>
 					</li>
 				</ul>
 			</section>
@@ -81,6 +81,9 @@
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../classes/_core_entities_itaskitem_.audiotask.html" class="tsd-signature-type">AudioTask</a></li>
+					<li><a href="../classes/_core_entities_itaskitem_.periodtask.html" class="tsd-signature-type">PeriodTask</a></li>
+					<li><a href="../classes/_core_entities_itaskitem_.task.html" class="tsd-signature-type">Task</a></li>
+					<li><a href="../classes/_core_entities_itaskitem_.texttask.html" class="tsd-signature-type">TextTask</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -88,63 +91,68 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.itaskitem.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.itaskitem.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.itaskitem.html#status" class="tsd-kind-icon">status</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.playable.html#pause" class="tsd-kind-icon">pause</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.playable.html#play" class="tsd-kind-icon">play</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.playable.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_core_entities_itaskitem_.itaskitem.html#toggle" class="tsd-kind-icon">toggle</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <a href="../modules/_core_entities_itaskitem_.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/ff79fef/src/core/Entities/ITaskItem.ts#L3">core/Entities/ITaskItem.ts:3</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/ff79fef/src/core/Entities/ITaskItem.ts#L2">core/Entities/ITaskItem.ts:2</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="../enums/_core_entities_itaskitem_.etaskstatus.html" class="tsd-signature-type">ETaskStatus</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/ff79fef/src/core/Entities/ITaskItem.ts#L4">core/Entities/ITaskItem.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="pause" class="tsd-anchor"></a>
-					<h3>pause</h3>
+					<a name="toggle" class="tsd-anchor"></a>
+					<h3>toggle</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">pause<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">toggle<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/6f1d7a6/src/core/Entities/ITaskItem.ts#L22">core/Entities/ITaskItem.ts:22</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="play" class="tsd-anchor"></a>
-					<h3>play</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">play<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/6f1d7a6/src/core/Entities/ITaskItem.ts#L21">core/Entities/ITaskItem.ts:21</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="stop" class="tsd-anchor"></a>
-					<h3>stop</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/6f1d7a6/src/core/Entities/ITaskItem.ts#L23">core/Entities/ITaskItem.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/ff79fef/src/core/Entities/ITaskItem.ts#L5">core/Entities/ITaskItem.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -202,27 +210,30 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_core_entities_itaskitem_.iperiodlimit.html" class="tsd-kind-icon">IPeriod<wbr>Limit</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_core_entities_itaskitem_.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_core_entities_itaskitem_.playable.html" class="tsd-kind-icon">Playable</a>
+						<a href="_core_entities_itaskitem_.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_core_entities_itaskitem_.playable.html#pause" class="tsd-kind-icon">pause</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_core_entities_itaskitem_.itaskitem.html#content" class="tsd-kind-icon">content</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_core_entities_itaskitem_.itaskitem.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_core_entities_itaskitem_.itaskitem.html#status" class="tsd-kind-icon">status</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_core_entities_itaskitem_.playable.html#play" class="tsd-kind-icon">play</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_core_entities_itaskitem_.playable.html#stop" class="tsd-kind-icon">stop</a>
+								<a href="_core_entities_itaskitem_.itaskitem.html#toggle" class="tsd-kind-icon">toggle</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_core_entities_itaskitem_.playable.html" class="tsd-kind-icon">Playable</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_core_entities_itaskitem_.html#mediatasktype" class="tsd-kind-icon">Media<wbr>Task<wbr>Type</a>
 					</li>
@@ -242,12 +253,13 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

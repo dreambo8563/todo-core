@@ -15,7 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --coverage",
     "lint": "tsdx lint src test --fix",
-    "docs":"typedoc",
+    "doc":"typedoc",
     "prepare": "tsdx build"
   },
   "peerDependencies": {},
