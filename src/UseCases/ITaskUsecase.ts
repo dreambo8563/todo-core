@@ -1,6 +1,6 @@
-import { TaskContentType, ITaskItem } from '../Entities/ITaskItem';
-import { ITaskAPI } from '../../Interface/API/TaskAPI';
-import { ITaskRepository } from '../Repository/TaskRepository';
+import { TaskContentType, ITaskItem } from '../core/Entities/ITaskItem';
+import { ITaskAPI } from '../Interface/API/TaskAPI';
+import { ITaskRepository } from '../Interface/Repository/TaskRepository';
 
 export interface ITaskUsecase {
   createTask(

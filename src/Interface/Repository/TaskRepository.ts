@@ -3,7 +3,7 @@ import {
   ITaskItem,
   TextTask,
   AudioTask,
-} from '../Entities/ITaskItem';
+} from '../../core/Entities/ITaskItem';
 
 export interface ITaskRepository {
   createTask(

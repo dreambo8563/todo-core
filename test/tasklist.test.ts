@@ -1,7 +1,7 @@
-import { TaskListUsecase } from '../src/core/UseCases/ITaskListUsecase';
-import { TaskUsecase } from '../src/core/UseCases/ITaskUsecase';
+import { TaskListUsecase } from '../src/UseCases/ITaskListUsecase';
+import { TaskUsecase } from '../src/UseCases/ITaskUsecase';
 import { TaskAPI } from '../src/Interface/API/TaskAPI';
-import { TaskRepository } from '../src/core/Repository/TaskRepository';
+import { TaskRepository } from '../src/Interface/Repository/TaskRepository';
 
 describe('tasklist', () => {
   it('add task', async () => {
