@@ -2,5 +2,6 @@
     "inputFiles": ["./src"],
     "mode": "modules",
     "out": "docs",
-    "name":"todo-core API Documentation"
+    "name":"todo-core API Documentation",
+    "external-modulemap": ".*\/([\\w\\-_]+)\/"
   }

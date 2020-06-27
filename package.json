@@ -15,7 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --coverage",
     "lint": "tsdx lint src test --fix",
-    "doc":"typedoc && touch docs/.nojekyll",
+    "doc": "typedoc && touch docs/.nojekyll",
     "prepare": "tsdx build"
   },
   "peerDependencies": {},
@@ -40,6 +40,7 @@
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typedoc": "^0.17.7",
+    "typedoc-plugin-external-module-map": "^1.2.1",
     "typescript": "^3.9.5"
   },
   "config": {

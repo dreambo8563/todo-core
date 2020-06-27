@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TaskRepository | todo-core API Documentation</title>
+	<title>ITaskAPI | todo-core API Documentation</title>
 	<meta name="description" content="Documentation for todo-core API Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_interface_repository_taskrepository_.html">&quot;Interface/Repository/TaskRepository&quot;</a>
+					<a href="../modules/api.html">API</a>
 				</li>
 				<li>
-					<a href="_interface_repository_taskrepository_.taskrepository.html">TaskRepository</a>
+					<a href="api.itaskapi.html">ITaskAPI</a>
 				</li>
 			</ul>
-			<h1>Class TaskRepository</h1>
+			<h1>Interface ITaskAPI</h1>
 		</div>
 	</div>
 </header>
@@ -73,14 +73,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TaskRepository</span>
+						<span class="target">ITaskAPI</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implements</h3>
+				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_interface_repository_taskrepository_.itaskrepository.html" class="tsd-signature-type">ITaskRepository</a></li>
+					<li><a href="../classes/api.taskapi.html" class="tsd-signature-type">TaskAPI</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -90,7 +90,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_interface_repository_taskrepository_.taskrepository.html#createtask" class="tsd-kind-icon">create<wbr>Task</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.itaskapi.html#createtask" class="tsd-kind-icon">create<wbr>Task</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,33 +98,26 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="createtask" class="tsd-anchor"></a>
 					<h3>create<wbr>Task</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><a href="../modules/_core_entities_itaskitem_.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a>, finishDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_core_entities_itaskitem_.texttask.html" class="tsd-signature-type">TextTask</a><span class="tsd-signature-symbol"> | </span><a href="_core_entities_itaskitem_.audiotask.html" class="tsd-signature-type">AudioTask</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_interface_repository_taskrepository_.itaskrepository.html">ITaskRepository</a>.<a href="../interfaces/_interface_repository_taskrepository_.itaskrepository.html#createtask">createTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/d8a7952/src/Interface/Repository/TaskRepository.ts#L17">Interface/Repository/TaskRepository.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/045155f/src/Interface/API/TaskAPI.ts#L3">Interface/API/TaskAPI.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>content: <a href="../modules/_core_entities_itaskitem_.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a></h5>
-								</li>
-								<li>
-									<h5>finishDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_core_entities_itaskitem_.texttask.html" class="tsd-signature-type">TextTask</a><span class="tsd-signature-symbol"> | </span><a href="_core_entities_itaskitem_.audiotask.html" class="tsd-signature-type">AudioTask</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -136,43 +129,40 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_interface_api_taskapi_.html">&quot;<wbr>Interface/API/<wbr>TaskAPI&quot;</a>
-					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_interface_repository_taskrepository_.html">&quot;<wbr>Interface/<wbr>Repository/<wbr>Task<wbr>Repository&quot;</a>
+						<a href="../modules/api.html">API</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_usecases_itasklistusecase_.html">&quot;<wbr>Use<wbr>Cases/ITask<wbr>List<wbr>Usecase&quot;</a>
+						<a href="../modules/entities.html">Entities</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_usecases_itaskusecase_.html">&quot;<wbr>Use<wbr>Cases/ITask<wbr>Usecase&quot;</a>
+						<a href="../modules/repository.html">Repository</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_core_entities_itaskitem_.html">&quot;core/<wbr>Entities/ITask<wbr>Item&quot;</a>
+						<a href="../modules/usecases.html">Use<wbr>Cases</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_index_.html">&quot;index&quot;</a>
+						<a href="../modules/src.html">src</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/api.taskapi.html" class="tsd-kind-icon">TaskAPI</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_interface_repository_taskrepository_.taskrepository.html" class="tsd-kind-icon">Task<wbr>Repository</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="api.itaskapi.html" class="tsd-kind-icon">ITaskAPI</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_interface_repository_taskrepository_.taskrepository.html#createtask" class="tsd-kind-icon">create<wbr>Task</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api.itaskapi.html#createtask" class="tsd-kind-icon">create<wbr>Task</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_interface_repository_taskrepository_.itaskrepository.html" class="tsd-kind-icon">ITask<wbr>Repository</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -183,19 +173,19 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>
