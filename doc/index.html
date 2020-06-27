@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>todo-core API Documentation</title>
+	<meta name="description" content="Documentation for todo-core API Documentation">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">todo-core API Documentation</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>todo-core API Documentation</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#why-create-the-demo-repo-" id="why-create-the-demo-repo-" style="color: inherit; text-decoration: none;">
+					<h1>Why create the demo repo ?</h1>
+				</a>
+				<p>长时间的挣扎在业务系统开发, 面对重复性高的工作, 遇到的最大问题不是技术问题, 而往往是业务复杂度问题. 我想这也是为什么像 <strong>DDD</strong> 这种思潮能够越来越受到关注的原因.
+				前端开发往往更多是业务上的&quot;面条&quot;代码, 当业务逻辑达到一定的复杂度时, 维护性和扩展性都受到了极大的约束, 当然前提是这个系统持续在产生价值, 并且不断在迭代. 那些短命项目不在此列.</p>
+				<p>前端业务领域中, 确实看到应用 OO 范式的很少, 很多也就是玩一玩. 但OO 的角度看待业务逻辑,确实能够让我们更聚焦,是我们日常看待事物的方式, 至少比&quot;面条&quot;代码更易维护和扩展.</p>
+				<a href="#how-" id="how-" style="color: inherit; text-decoration: none;">
+					<h1>How ?</h1>
+				</a>
+				<p>这个 demo 想达到的效果:</p>
+				<ol>
+					<li>抛开 view 层的东西,UI,UX 相关. 纯粹的针对 business logic 进行聚焦</li>
+					<li>利用 TS 来从 OO 的角度实现更好的维护性和扩展性</li>
+					<li>初步实践 DDD 中对领域的拆分</li>
+					<li>可能的情况下使用/学习一些适当的设计模式</li>
+					<li>将这个 core 暴露给当前流行的前端框架...</li>
+				</ol>
+				<a href="#焦虑分离" id="焦虑分离" style="color: inherit; text-decoration: none;">
+					<h1>焦虑分离</h1>
+				</a>
+				<p>.
+					└── Domain
+					├── Entities // 基础业务对象/规则
+					├── UseCases // 基于Entities形成的应用层用例
+				└── InterfaceAdapters //外部和UseCases/Entities 之间的适配层</p>
+				<a href="#tsdx-bootstrap" id="tsdx-bootstrap" style="color: inherit; text-decoration: none;">
+					<h1>TSDX Bootstrap</h1>
+				</a>
+				<p>This project was bootstrapped with <a href="https://github.com/jaredpalmer/tsdx">TSDX</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_interface_api_taskapi_.html">&quot;<wbr>Interface/API/<wbr>TaskAPI&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_interface_repository_taskrepository_.html">&quot;<wbr>Interface/<wbr>Repository/<wbr>Task<wbr>Repository&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_usecases_itasklistusecase_.html">&quot;<wbr>Use<wbr>Cases/ITask<wbr>List<wbr>Usecase&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_usecases_itaskusecase_.html">&quot;<wbr>Use<wbr>Cases/ITask<wbr>Usecase&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_core_entities_itaskitem_.html">&quot;core/<wbr>Entities/ITask<wbr>Item&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_index_.html">&quot;index&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

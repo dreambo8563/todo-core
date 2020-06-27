@@ -6,3 +6,5 @@ build:
 	npm run build
 ut:
 	npm run test
+docs:
+	npm run docs
