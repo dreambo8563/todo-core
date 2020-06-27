@@ -4,7 +4,7 @@ import {
   TextTask,
   AudioTask,
   ETaskStatus,
-} from '../src/Domain/Entities/ITaskItem';
+} from '../src/core/Entities/ITaskItem';
 
 describe('task', () => {
   it('constructor', () => {

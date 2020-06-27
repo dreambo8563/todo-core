@@ -1,17 +1,16 @@
 import fetch from 'node-fetch';
 export interface ITaskAPI {
-  createTask(content: string): Promise<{ id: string; body: string }>;
+  createTask(content: string | URL): Promise<{ id: string; body: string }>;
 }
 
 export class TaskAPI implements ITaskAPI {
-  //Singleton pattern - Lazy initialization
+  //* Singleton pattern - Lazy initialization
   private static instance: TaskAPI | null = null;
   private constructor() {}
   static getInstance() {
     if (null === this.instance) {
       this.instance = new TaskAPI();
     }
-
     return this.instance;
   }
   async createTask(content: string | URL) {

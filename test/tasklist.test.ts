@@ -1,11 +1,13 @@
-import { TaskListUsecase } from '../src/Domain/UseCases/ITaskListUsecase';
-import { TaskUsecase } from '../src/Domain/UseCases/ITaskUsecase';
+import { TaskListUsecase } from '../src/core/UseCases/ITaskListUsecase';
+import { TaskUsecase } from '../src/core/UseCases/ITaskUsecase';
 import { TaskAPI } from '../src/Interface/API/TaskAPI';
+import { TaskRepository } from '../src/core/Repository/TaskRepository';
 
 describe('tasklist', () => {
   it('add task', async () => {
     const api = TaskAPI.getInstance();
-    const taskService = new TaskUsecase(api);
+    const repo = new TaskRepository();
+    const taskService = new TaskUsecase(api, repo);
     const todo = await taskService.createTask('project1- task1');
     console.log(todo);
     const taskListService = new TaskListUsecase();
