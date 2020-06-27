@@ -65,7 +65,6 @@ export class AudioTask extends PeriodTask<MediaTaskType> implements Playable {
   //   super(id, content);
   // }
   play() {
-    console.log(this.content.toString());
     console.log('play the audio');
   }
   pause() {

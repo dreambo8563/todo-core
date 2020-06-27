@@ -26,6 +26,8 @@ describe('task', () => {
     expect(todo.status).toEqual(ETaskStatus.unFinished);
     todo.toggle();
     expect(todo.status).toEqual(ETaskStatus.Finished);
+    todo.toggle();
+    expect(todo.status).toEqual(ETaskStatus.unFinished);
   });
   it('Audio task playable', () => {
     const todo: AudioTask = new AudioTask(
@@ -35,5 +37,10 @@ describe('task', () => {
     expect(todo.play).toBeDefined();
     expect(todo.pause).toBeDefined();
     expect(todo.stop).toBeDefined();
+    const consoleSpy = jest.spyOn(console, 'log');
+    todo.play();
+    todo.pause();
+    todo.stop();
+    expect(consoleSpy).toHaveBeenCalledTimes(3);
   });
 });
