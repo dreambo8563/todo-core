@@ -17,7 +17,7 @@ export type TextTaskType = string;
 export type MediaTaskType = URL;
 export type TaskContentType = TextTaskType | MediaTaskType;
 
-export interface Playable {
+export interface IPlayable {
   play(): void;
   pause(): void;
   stop(): void;
@@ -60,7 +60,7 @@ export class TextTask extends PeriodTask<TextTaskType> {
   //   super(id, content);
   // }
 }
-export class AudioTask extends PeriodTask<MediaTaskType> implements Playable {
+export class AudioTask extends PeriodTask<MediaTaskType> implements IPlayable {
   // constructor(id: string, content: MediaTaskType) {
   //   super(id, content);
   // }
