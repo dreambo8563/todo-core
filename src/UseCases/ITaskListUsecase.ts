@@ -1,21 +1,22 @@
 import { ITaskItem } from '../core/Entities/ITaskItem';
+import { ITaskLiskRepository } from '../Interface/Repository/TaskListRepository';
 
 // task list use cases
 export interface ITaskListUsecase {
   // searchByKeywords(keywords: string): Array<ITaskItem>;
   addTask(t: ITaskItem): Array<ITaskItem>;
-  // getTask(id: string): ITaskItem;
+  getTask(id: string): ITaskItem | null;
   // updateTask(t: ITaskItem): ITaskItem;
   // deleteTask(t: ITaskItem): void;
 }
 
 export class TaskListUsecase implements ITaskListUsecase {
-  taskList: Array<ITaskItem> = [];
-  // constructor(parameters) {
-  //TODO: Dependency Injection - API service...
-  // }
+  //* Dependency Injection - API service...
+  constructor(private repo: ITaskLiskRepository) {}
   addTask(t: ITaskItem) {
-    this.taskList.push(t);
-    return this.taskList;
+    return this.repo.addTask(t);
+  }
+  getTask(id: string) {
+    return this.repo.getTask(id);
   }
 }

@@ -10,7 +10,7 @@ export interface ITaskUsecase {
 }
 
 export class TaskUsecase implements ITaskUsecase {
-  //TODO: Dependency Injection - API/cache/log service...
+  //* Dependency Injection - API/cache/log service...
   constructor(private api: ITaskAPI, private repo: ITaskRepository) {}
   async createTask(content: TaskContentType, finishDate: Date | null = null) {
     // detail to implement the logic
