@@ -6,15 +6,15 @@ export interface ITaskListUsecase {
   // searchByKeywords(keywords: string): Array<ITaskItem>;
   addTask(t: ITaskItem): Array<ITaskItem>;
   getTask(id: string): ITaskItem | null;
-  updateTask(t: ITaskItem): Array<ITaskItem>;
+  updateTask(id: string, t: ITaskItem): Array<ITaskItem>;
   delTask(id: string): void;
 }
 
 export class TaskListUsecase implements ITaskListUsecase {
   //* Dependency Injection - API service...
   constructor(private repo: ITaskLiskRepository) {}
-  updateTask(t: ITaskItem): ITaskItem[] {
-    return this.repo.updateTask(t);
+  updateTask(id: string, t: ITaskItem): ITaskItem[] {
+    return this.repo.updateTask(id, t);
   }
   delTask(id: string): void {
     return this.repo.delTask(id);

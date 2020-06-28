@@ -90,8 +90,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.ilockable.html" class="tsd-kind-icon">ILockable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.iperiodlimit.html" class="tsd-kind-icon">IPeriod<wbr>Limit</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.iplayable.html" class="tsd-kind-icon">IPlayable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.playable.html" class="tsd-kind-icon">Playable</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -113,9 +113,14 @@
 					<div class="tsd-signature tsd-kind-icon">Media<wbr>Task<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">URL</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/045155f/src/core/Entities/ITaskItem.ts#L17">core/Entities/ITaskItem.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/core/Entities/ITaskItem.ts#L31">core/Entities/ITaskItem.ts:31</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>内容为 URL 地址类型的 task, 比如 audio</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="taskcontenttype" class="tsd-anchor"></a>
@@ -123,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">Task<wbr>Content<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="entities.html#texttasktype" class="tsd-signature-type">TextTaskType</a><span class="tsd-signature-symbol"> | </span><a href="entities.html#mediatasktype" class="tsd-signature-type">MediaTaskType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/045155f/src/core/Entities/ITaskItem.ts#L18">core/Entities/ITaskItem.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/core/Entities/ITaskItem.ts#L32">core/Entities/ITaskItem.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -133,9 +138,14 @@
 					<div class="tsd-signature tsd-kind-icon">Text<wbr>Task<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/045155f/src/core/Entities/ITaskItem.ts#L16">core/Entities/ITaskItem.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/core/Entities/ITaskItem.ts#L27">core/Entities/ITaskItem.ts:27</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>内容为string 类型的 task</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -156,9 +166,6 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="usecases.html">Use<wbr>Cases</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="src.html">src</a>
 					</li>
 				</ul>
 			</nav>
@@ -186,10 +193,10 @@
 						<a href="../interfaces/entities.iperiodlimit.html" class="tsd-kind-icon">IPeriod<wbr>Limit</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/entities.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a>
+						<a href="../interfaces/entities.iplayable.html" class="tsd-kind-icon">IPlayable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/entities.playable.html" class="tsd-kind-icon">Playable</a>
+						<a href="../interfaces/entities.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="entities.html#mediatasktype" class="tsd-kind-icon">Media<wbr>Task<wbr>Type</a>
@@ -210,12 +217,11 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

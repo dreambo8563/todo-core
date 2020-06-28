@@ -116,4 +116,31 @@ describe('tasklist', () => {
     taskListService.delTask('1');
     expect(list.length).toEqual(0);
   });
+
+  it('update task', async () => {
+    const api = TaskAPI.getInstance();
+    const repo = new TaskRepository();
+    const taskService = new TaskUsecase(api, repo);
+    mockRes({
+      id: '1',
+      content: '1111',
+    });
+    let todo = (await taskService.createTask(
+      new URL('http://www.baidu.com.xx.mp4'),
+      null
+    )) as AudioTask;
+    const listrepo = new TaskListRepository();
+    const taskListService = new TaskListUsecase(listrepo);
+    taskListService.addTask(todo);
+    expect(todo.content.toString()).toEqual(
+      new URL('http://www.baidu.com.xx.mp4').toString()
+    );
+    const newTodo = await taskService.createTask('project1- task1');
+    let list = taskListService.updateTask('2', newTodo);
+    expect(todo.content.toString()).toEqual(
+      new URL('http://www.baidu.com.xx.mp4').toString()
+    );
+    list = taskListService.updateTask('1', newTodo);
+    expect(list[0].content.toString()).toEqual('project1- task1');
+  });
 });

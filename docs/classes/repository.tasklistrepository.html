@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TaskListUsecase | todo-core API Documentation</title>
+	<title>TaskListRepository | todo-core API Documentation</title>
 	<meta name="description" content="Documentation for todo-core API Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/usecases.html">UseCases</a>
+					<a href="../modules/repository.html">Repository</a>
 				</li>
 				<li>
-					<a href="usecases.tasklistusecase.html">TaskListUsecase</a>
+					<a href="repository.tasklistrepository.html">TaskListRepository</a>
 				</li>
 			</ul>
-			<h1>Class TaskListUsecase</h1>
+			<h1>Class TaskListRepository</h1>
 		</div>
 	</div>
 </header>
@@ -73,79 +73,47 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TaskListUsecase</span>
+						<span class="target">TaskListRepository</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/usecases.itasklistusecase.html" class="tsd-signature-type">ITaskListUsecase</a></li>
+					<li><a href="../interfaces/repository.itaskliskrepository.html" class="tsd-signature-type">ITaskLiskRepository</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="usecases.tasklistusecase.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="usecases.tasklistusecase.html#repo" class="tsd-kind-icon">repo</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="repository.tasklistrepository.html#_tasklist" class="tsd-kind-icon">_task<wbr>List</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="usecases.tasklistusecase.html#addtask" class="tsd-kind-icon">add<wbr>Task</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="usecases.tasklistusecase.html#deltask" class="tsd-kind-icon">del<wbr>Task</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="usecases.tasklistusecase.html#gettask" class="tsd-kind-icon">get<wbr>Task</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="usecases.tasklistusecase.html#updatetask" class="tsd-kind-icon">update<wbr>Task</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.tasklistrepository.html#addtask" class="tsd-kind-icon">add<wbr>Task</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.tasklistrepository.html#deltask" class="tsd-kind-icon">del<wbr>Task</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.tasklistrepository.html#gettask" class="tsd-kind-icon">get<wbr>Task</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.tasklistrepository.html#updatetask" class="tsd-kind-icon">update<wbr>Task</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Task<wbr>List<wbr>Usecase<span class="tsd-signature-symbol">(</span>repo<span class="tsd-signature-symbol">: </span><a href="../interfaces/repository.itaskliskrepository.html" class="tsd-signature-type">ITaskLiskRepository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="usecases.tasklistusecase.html" class="tsd-signature-type">TaskListUsecase</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/UseCases/ITaskListUsecase.ts#L13">UseCases/ITaskListUsecase.ts:13</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>repo: <a href="../interfaces/repository.itaskliskrepository.html" class="tsd-signature-type">ITaskLiskRepository</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="usecases.tasklistusecase.html" class="tsd-signature-type">TaskListUsecase</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="repo" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> repo</h3>
-					<div class="tsd-signature tsd-kind-icon">repo<span class="tsd-signature-symbol">:</span> <a href="../interfaces/repository.itaskliskrepository.html" class="tsd-signature-type">ITaskLiskRepository</a></div>
+					<a name="_tasklist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _task<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">_task<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/UseCases/ITaskListUsecase.ts#L15">UseCases/ITaskListUsecase.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/Interface/Repository/TaskListRepository.ts#L11">Interface/Repository/TaskListRepository.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -161,9 +129,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/usecases.itasklistusecase.html">ITaskListUsecase</a>.<a href="../interfaces/usecases.itasklistusecase.html#addtask">addTask</a></p>
+								<p>Implementation of <a href="../interfaces/repository.itaskliskrepository.html">ITaskLiskRepository</a>.<a href="../interfaces/repository.itaskliskrepository.html#addtask">addTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/UseCases/ITaskListUsecase.ts#L22">UseCases/ITaskListUsecase.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/Interface/Repository/TaskListRepository.ts#L16">Interface/Repository/TaskListRepository.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -185,9 +153,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/usecases.itasklistusecase.html">ITaskListUsecase</a>.<a href="../interfaces/usecases.itasklistusecase.html#deltask">delTask</a></p>
+								<p>Implementation of <a href="../interfaces/repository.itaskliskrepository.html">ITaskLiskRepository</a>.<a href="../interfaces/repository.itaskliskrepository.html#deltask">delTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/UseCases/ITaskListUsecase.ts#L19">UseCases/ITaskListUsecase.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/Interface/Repository/TaskListRepository.ts#L20">Interface/Repository/TaskListRepository.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,14 +172,14 @@
 					<a name="gettask" class="tsd-anchor"></a>
 					<h3>get<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/usecases.itasklistusecase.html">ITaskListUsecase</a>.<a href="../interfaces/usecases.itasklistusecase.html#gettask">getTask</a></p>
+								<p>Implementation of <a href="../interfaces/repository.itaskliskrepository.html">ITaskLiskRepository</a>.<a href="../interfaces/repository.itaskliskrepository.html#gettask">getTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/UseCases/ITaskListUsecase.ts#L25">UseCases/ITaskListUsecase.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/Interface/Repository/TaskListRepository.ts#L12">Interface/Repository/TaskListRepository.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -220,7 +188,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -233,9 +201,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/usecases.itasklistusecase.html">ITaskListUsecase</a>.<a href="../interfaces/usecases.itasklistusecase.html#updatetask">updateTask</a></p>
+								<p>Implementation of <a href="../interfaces/repository.itaskliskrepository.html">ITaskLiskRepository</a>.<a href="../interfaces/repository.itaskliskrepository.html#updatetask">updateTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/UseCases/ITaskListUsecase.ts#L16">UseCases/ITaskListUsecase.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/35ed3da/src/Interface/Repository/TaskListRepository.ts#L26">Interface/Repository/TaskListRepository.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -265,10 +233,10 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/entities.html">Entities</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/repository.html">Repository</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/usecases.html">Use<wbr>Cases</a>
 					</li>
 				</ul>
@@ -278,38 +246,35 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="usecases.tasklistusecase.html" class="tsd-kind-icon">Task<wbr>List<wbr>Usecase</a>
+						<a href="repository.tasklistrepository.html" class="tsd-kind-icon">Task<wbr>List<wbr>Repository</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="usecases.tasklistusecase.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="usecases.tasklistusecase.html#repo" class="tsd-kind-icon">repo</a>
+								<a href="repository.tasklistrepository.html#_tasklist" class="tsd-kind-icon">_task<wbr>List</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="usecases.tasklistusecase.html#addtask" class="tsd-kind-icon">add<wbr>Task</a>
+								<a href="repository.tasklistrepository.html#addtask" class="tsd-kind-icon">add<wbr>Task</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="usecases.tasklistusecase.html#deltask" class="tsd-kind-icon">del<wbr>Task</a>
+								<a href="repository.tasklistrepository.html#deltask" class="tsd-kind-icon">del<wbr>Task</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="usecases.tasklistusecase.html#gettask" class="tsd-kind-icon">get<wbr>Task</a>
+								<a href="repository.tasklistrepository.html#gettask" class="tsd-kind-icon">get<wbr>Task</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="usecases.tasklistusecase.html#updatetask" class="tsd-kind-icon">update<wbr>Task</a>
+								<a href="repository.tasklistrepository.html#updatetask" class="tsd-kind-icon">update<wbr>Task</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="usecases.taskusecase.html" class="tsd-kind-icon">Task<wbr>Usecase</a>
+						<a href="repository.taskrepository.html" class="tsd-kind-icon">Task<wbr>Repository</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/usecases.itasklistusecase.html" class="tsd-kind-icon">ITask<wbr>List<wbr>Usecase</a>
+						<a href="../interfaces/repository.itaskliskrepository.html" class="tsd-kind-icon">ITask<wbr>Lisk<wbr>Repository</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/usecases.itaskusecase.html" class="tsd-kind-icon">ITask<wbr>Usecase</a>
+						<a href="../interfaces/repository.itaskrepository.html" class="tsd-kind-icon">ITask<wbr>Repository</a>
 					</li>
 				</ul>
 			</nav>
@@ -323,7 +288,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

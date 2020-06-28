@@ -67,11 +67,11 @@
 				<a href="#why-create-the-demo-repo-" id="why-create-the-demo-repo-" style="color: inherit; text-decoration: none;">
 					<h1>Why create the demo repo ?</h1>
 				</a>
-				<p>长时间的挣扎在业务系统开发, 面对重复性高的工作, 遇到的最大问题不是技术问题, 而往往是业务复杂度问题. 我想这也是为什么像 <strong>DDD</strong> 这种思潮能够越来越受到关注的原因.
-				前端开发往往更多是业务上的&quot;面条&quot;代码, 当业务逻辑达到一定的复杂度时, 维护性和扩展性都受到了极大的约束, 当然前提是这个系统持续在产生价值, 并且不断在迭代. 那些短命项目不在此列.</p>
+				<p>长时间的挣扎在业务系统开发, 面对重复性高的工作, 遇到的最大问题不是技术问题, 而往往是业务复杂度问题. 我想这也是为什么像 <strong>DDD</strong> 这种思潮能够越来越受到关注的原因.</p>
+				<p>前端开发往往更多是业务上的&quot;面条&quot;代码, 当业务逻辑达到一定的复杂度时, 维护性和扩展性都受到了极大的约束, 当然前提是这个系统持续在产生价值, 并且不断在迭代. 那些短命项目不在此列.</p>
 				<p>前端业务领域中, 确实看到应用 OO 范式的很少, 很多也就是玩一玩. 但OO 的角度看待业务逻辑,确实能够让我们更聚焦,是我们日常看待事物的方式, 至少比&quot;面条&quot;代码更易维护和扩展.</p>
-				<a href="#how-" id="how-" style="color: inherit; text-decoration: none;">
-					<h1>How ?</h1>
+				<a href="#target-" id="target-" style="color: inherit; text-decoration: none;">
+					<h1>Target ?</h1>
 				</a>
 				<p>这个 demo 想达到的效果:</p>
 				<ol>
@@ -81,14 +81,17 @@
 					<li>可能的情况下使用/学习一些适当的设计模式</li>
 					<li>将这个 core 暴露给当前流行的前端框架...</li>
 				</ol>
-				<a href="#焦虑分离" id="焦虑分离" style="color: inherit; text-decoration: none;">
-					<h1>焦虑分离</h1>
+				<a href="#how-" id="how-" style="color: inherit; text-decoration: none;">
+					<h1>How ?</h1>
 				</a>
-				<p>.
-					└── Domain
-					├── Entities // 基础业务对象/规则
-					├── UseCases // 基于Entities形成的应用层用例
-				└── InterfaceAdapters //外部和UseCases/Entities 之间的适配层</p>
+				<pre><code>.
+├── core    <span class="hljs-regexp">//</span> 核心业务规则
+│   ├── Entities    <span class="hljs-regexp">//</span> 基础业务对象/规则
+│   └── Services    <span class="hljs-regexp">//</span> 对 Entities 组合后的组合型规则
+├── Interface   <span class="hljs-regexp">//</span>外部和UseCases/Entities 之间的适配层
+│   ├── API     <span class="hljs-regexp">//</span> 对外通信层
+│   └── Repository  <span class="hljs-regexp">//</span> 数据存储层
+└── UseCases    <span class="hljs-regexp">//</span> 基于Entities形成的应用层用例</code></pre>
 				<a href="#tsdx-bootstrap" id="tsdx-bootstrap" style="color: inherit; text-decoration: none;">
 					<h1>TSDX Bootstrap</h1>
 				</a>
@@ -113,9 +116,6 @@
 					<li class=" tsd-kind-module">
 						<a href="modules/usecases.html">Use<wbr>Cases</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/src.html">src</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -130,12 +130,11 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
