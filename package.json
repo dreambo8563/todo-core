@@ -41,6 +41,7 @@
     "tslib": "^2.0.0",
     "typedoc": "^0.17.7",
     "typedoc-plugin-external-module-map": "^1.2.1",
+    "typedoc-umlclass": "^0.1.7",
     "typescript": "^3.9.5"
   },
   "config": {

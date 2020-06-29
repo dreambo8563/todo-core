@@ -26,6 +26,6 @@ export class TaskAPI implements ITaskAPI {
       },
       timeout: 30000,
     });
-    return await response.json();
+    return (await response.json()) as Promise<{ id: string; body: string }>;
   }
 }

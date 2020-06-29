@@ -23,7 +23,7 @@ export class TaskListRepository implements ITaskLiskRepository {
       this._taskList.splice(index, 1);
     }
   }
-  updateTask(id: string, t: ITaskItem): ITaskItem[] {
+  updateTask(id: string, t: ITaskItem): Array<ITaskItem> {
     const index = this._taskList.findIndex(i => i.id === id);
     if (index >= 0) {
       this._taskList.splice(index, 1, t);

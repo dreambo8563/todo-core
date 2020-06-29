@@ -2677,3 +2677,4 @@ input[type=checkbox]:checked + .tsd-widget:before {
 img {
   max-width: 100%;
 }
+.tsd-hierarchy-diagram .diagram { max-width: 100%; display: block; margin: 0 auto; text-align: center; }

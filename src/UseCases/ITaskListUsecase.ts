@@ -13,7 +13,7 @@ export interface ITaskListUsecase {
 export class TaskListUsecase implements ITaskListUsecase {
   //* Dependency Injection - API service...
   constructor(private repo: ITaskLiskRepository) {}
-  updateTask(id: string, t: ITaskItem): ITaskItem[] {
+  updateTask(id: string, t: ITaskItem): Array<ITaskItem> {
     return this.repo.updateTask(id, t);
   }
   delTask(id: string): void {

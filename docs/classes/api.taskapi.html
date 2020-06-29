@@ -69,7 +69,15 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
+			<section class="tsd-panel tsd-hierarchy-diagram">
+                        <h3>Hierarchy-Diagram</h3>
+                        <a class="diagram" href="../assets/images/TaskAPI-umlClassDiagram-9.svg" title="Click to enlarge">
+                            <img src="../assets/images/TaskAPI-umlClassDiagram-9.svg"
+                                 alt="UML class diagram of TaskAPI" />
+                        </a>
+                        
+                    </section>
+<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
@@ -121,7 +129,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/eb43c24/src/Interface/API/TaskAPI.ts#L8">Interface/API/TaskAPI.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/7c1f654/src/Interface/API/TaskAPI.ts#L8">Interface/API/TaskAPI.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="api.taskapi.html" class="tsd-signature-type">TaskAPI</a></h4>
@@ -137,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> <a href="api.taskapi.html" class="tsd-signature-type">TaskAPI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/eb43c24/src/Interface/API/TaskAPI.ts#L8">Interface/API/TaskAPI.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/7c1f654/src/Interface/API/TaskAPI.ts#L8">Interface/API/TaskAPI.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -148,14 +156,14 @@
 					<a name="createtask" class="tsd-anchor"></a>
 					<h3>create<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/api.itaskapi.html">ITaskAPI</a>.<a href="../interfaces/api.itaskapi.html#createtask">createTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/eb43c24/src/Interface/API/TaskAPI.ts#L16">Interface/API/TaskAPI.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/7c1f654/src/Interface/API/TaskAPI.ts#L16">Interface/API/TaskAPI.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +172,7 @@
 									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -178,7 +186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/eb43c24/src/Interface/API/TaskAPI.ts#L10">Interface/API/TaskAPI.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/7c1f654/src/Interface/API/TaskAPI.ts#L10">Interface/API/TaskAPI.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="api.taskapi.html" class="tsd-signature-type">TaskAPI</a></h4>
