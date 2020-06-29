@@ -3,5 +3,7 @@
     "mode": "modules",
     "out": "docs",
     "name":"todo-core API Documentation",
-    "external-modulemap": ".*\/([\\w\\-_]+)\/"
+    "external-modulemap": ".*\/([\\w\\-_]+)\/",
+    "umlClassDiagramLegendType":"only-included",
+    "umlClassDiagramCreatePlantUmlFiles":true
   }

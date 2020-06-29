@@ -1,0 +1,13 @@
+@startuml
+hide empty methods
+hide empty fields
+class "TaskAPI" {
+    {static} -instance : TaskAPI | null
+    +createTask(content: string | URL) : Promise<object>
+    {static} +getInstance() : TaskAPI<>
+}
+interface "ITaskAPI" {
+    +createTask(content: string | URL) : Promise<object>
+}
+"ITaskAPI" <|.. "TaskAPI"
+@enduml

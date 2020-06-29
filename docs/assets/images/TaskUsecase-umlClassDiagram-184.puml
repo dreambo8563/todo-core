@@ -1,0 +1,13 @@
+@startuml
+hide empty methods
+hide empty fields
+class "TaskUsecase" {
+    -api : ITaskAPI
+    -repo : ITaskRepository
+    +createTask(content: TaskContentType, finishDate: Date | null) : Promise<ITaskItem>
+}
+interface "ITaskUsecase" {
+    +createTask(content: TaskContentType, finishDate: Date | null) : Promise<ITaskItem>
+}
+"ITaskUsecase" <|.. "TaskUsecase"
+@enduml

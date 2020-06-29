@@ -1,0 +1,19 @@
+@startuml
+hide empty methods
+hide empty fields
+class "TextTask" {
+    +content : TextTaskType
+    +finishDate : Date | null
+    +id : string
+    +status : ETaskStatus
+    +toggle() : void
+}
+class "PeriodTask" {
+    +content : T
+    +finishDate : Date | null
+    +id : string
+    +status : ETaskStatus
+    +toggle() : void
+}
+"PeriodTask" <|-- "TextTask"
+@enduml

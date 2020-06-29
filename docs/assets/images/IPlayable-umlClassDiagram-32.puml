@@ -1,0 +1,20 @@
+@startuml
+hide empty methods
+hide empty fields
+interface "IPlayable" {
+    +pause() : void
+    +play() : void
+    +stop() : void
+}
+class "AudioTask" {
+    +content : MediaTaskType
+    +finishDate : Date | null
+    +id : string
+    +status : ETaskStatus
+    +pause() : void
+    +play() : void
+    +stop() : void
+    +toggle() : void
+}
+"IPlayable" <|.. "AudioTask"
+@enduml
