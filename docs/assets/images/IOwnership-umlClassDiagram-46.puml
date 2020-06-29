@@ -1,0 +1,16 @@
+@startuml
+hide empty methods
+hide empty fields
+interface "IOwnership" {
+    +owner : ITaskOwner | null
+}
+class "Task" {
+    +content : T
+    +id : string
+    +owner : ITaskOwner | null
+    +status : ETaskStatus
+    -setStatus(s: ETaskStatus) : void
+    +toggle() : void
+}
+"IOwnership" <|.. "Task"
+@enduml

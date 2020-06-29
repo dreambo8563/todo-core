@@ -71,8 +71,8 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-hierarchy-diagram">
                         <h3>Hierarchy-Diagram</h3>
-                        <a class="diagram" href="../assets/images/ITaskRepository-umlClassDiagram-133.svg" title="Click to enlarge">
-                            <img src="../assets/images/ITaskRepository-umlClassDiagram-133.svg"
+                        <a class="diagram" href="../assets/images/ITaskRepository-umlClassDiagram-159.svg" title="Click to enlarge">
+                            <img src="../assets/images/ITaskRepository-umlClassDiagram-159.svg"
                                  alt="UML class diagram of ITaskRepository" />
                         </a>
                         <h4>Legend</h4>
@@ -120,13 +120,13 @@
 					<a name="createtask" class="tsd-anchor"></a>
 					<h3>create<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><a href="../modules/entities.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a>, finishDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><a href="../modules/entities.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a>, finishDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, owner<span class="tsd-signature-symbol">: </span><a href="entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/Interface/Repository/TaskRepository.ts#L9">Interface/Repository/TaskRepository.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/Interface/Repository/TaskRepository.ts#L10">Interface/Repository/TaskRepository.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -138,7 +138,10 @@
 									<h5>content: <a href="../modules/entities.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> finishDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<h5>finishDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+								</li>
+								<li>
+									<h5>owner: <a href="entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></h4>

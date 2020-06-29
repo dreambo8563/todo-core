@@ -5,10 +5,15 @@ import {
   AudioTask,
   ETaskStatus,
 } from '../src/core/Entities/ITaskItem';
+import { TaskOwner } from '../src/core/Entities/ICustomer';
 
 describe('task', () => {
   it('constructor', () => {
     const todo: Task<string> = new TextTask('1', 'abc', new Date());
+    const owner = new TaskOwner('owner1');
+    const friend = new TaskOwner('owner2', [owner], [todo]);
+    new TextTask('2', 'abc', new Date(), friend);
+
     expect(todo.id).toEqual('1');
     expect(todo.content).toEqual('abc');
     expect(todo instanceof Task).toBe(true);

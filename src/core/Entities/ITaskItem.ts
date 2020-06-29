@@ -1,3 +1,5 @@
+import { ITaskOwner } from './ICustomer';
+
 /**
  *
  * Task 接口核心类型
@@ -6,6 +8,7 @@ export interface ITaskItem {
   id: string;
   content: TaskContentType;
   status: ETaskStatus;
+
   toggle(): void;
 }
 
@@ -13,11 +16,15 @@ export interface ITaskItem {
  * 可以扩展为有结束日期类型的 task
  */
 export interface IPeriodLimit {
-  finishDate: Date | null;
+  finishDate?: Date | null;
 }
 /**
  * 可以用来扩展为能够锁定(只读)的 task
  */
+
+export interface IOwnership {
+  owner: ITaskOwner | null;
+}
 export interface ILockable {
   locked: boolean;
 }
@@ -55,6 +62,7 @@ export class Task<T extends TaskContentType> implements ITaskItem {
   id: string = '';
   content: T;
   status = ETaskStatus.unFinished;
+
   constructor(id: string, content: T) {
     this.id = id;
     this.content = content;
@@ -80,11 +88,18 @@ export class Task<T extends TaskContentType> implements ITaskItem {
  * Task 是为了更高层级扩展而保留的
  */
 export class PeriodTask<T extends TaskContentType> extends Task<T>
-  implements IPeriodLimit {
+  implements IPeriodLimit, IOwnership {
   finishDate: Date | null = null;
-  constructor(id: string, content: T, finishDate: Date | null = null) {
+  owner: ITaskOwner | null = null;
+  constructor(
+    id: string,
+    content: T,
+    finishDate: Date | null = null,
+    owner: ITaskOwner | null = null
+  ) {
     super(id, content);
     this.finishDate = finishDate;
+    this.owner = owner;
   }
 }
 export class TextTask extends PeriodTask<TextTaskType> {

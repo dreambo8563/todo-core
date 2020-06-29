@@ -6,6 +6,7 @@ import { AudioTask } from '../src/core/Entities/ITaskItem';
 import { TaskListRepository } from '../src/Interface/Repository/TaskListRepository';
 
 import mockRes from './utils/mockResponse';
+import { TaskOwner } from '../src/core/Entities/ICustomer';
 jest.mock('node-fetch');
 
 describe('tasklist', () => {
@@ -17,7 +18,8 @@ describe('tasklist', () => {
       id: '1',
       content: '1111',
     });
-    const todo = await taskService.createTask('project1- task1');
+    const owner = new TaskOwner('owner1');
+    const todo = await taskService.createTask('project1- task1', null, owner);
 
     const listrepo = new TaskListRepository();
     const taskListService = new TaskListUsecase(listrepo);

@@ -87,8 +87,8 @@
 			</section>
 			<section class="tsd-panel tsd-hierarchy-diagram">
                         <h3>Hierarchy-Diagram</h3>
-                        <a class="diagram" href="../assets/images/PeriodTask-umlClassDiagram-56.svg" title="Click to enlarge">
-                            <img src="../assets/images/PeriodTask-umlClassDiagram-56.svg"
+                        <a class="diagram" href="../assets/images/PeriodTask-umlClassDiagram-76.svg" title="Click to enlarge">
+                            <img src="../assets/images/PeriodTask-umlClassDiagram-76.svg"
                                  alt="UML class diagram of PeriodTask" />
                         </a>
                         <h4>Legend</h4>
@@ -134,6 +134,7 @@
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></li>
+					<li><a href="../interfaces/entities.iownership.html" class="tsd-signature-type">IOwnership</a></li>
 					<li><a href="../interfaces/entities.iperiodlimit.html" class="tsd-signature-type">IPeriodLimit</a></li>
 				</ul>
 			</section>
@@ -153,6 +154,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="entities.periodtask.html#content" class="tsd-kind-icon">content</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="entities.periodtask.html#finishdate" class="tsd-kind-icon">finish<wbr>Date</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="entities.periodtask.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="entities.periodtask.html#owner" class="tsd-kind-icon">owner</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="entities.periodtask.html#status" class="tsd-kind-icon">status</a></li>
 							</ul>
 						</section>
@@ -171,14 +173,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Period<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, finishDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="entities.periodtask.html" class="tsd-signature-type">PeriodTask</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Period<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, finishDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, owner<span class="tsd-signature-symbol">?: </span><a href="../interfaces/entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="entities.periodtask.html" class="tsd-signature-type">PeriodTask</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="entities.task.html">Task</a>.<a href="entities.task.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/core/Entities/ITaskItem.ts#L84">core/Entities/ITaskItem.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L93">core/Entities/ITaskItem.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,6 +193,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> finishDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> owner: <a href="../interfaces/entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="entities.periodtask.html" class="tsd-signature-type">PeriodTask</a></h4>
@@ -208,7 +213,7 @@
 						<p>Implementation of <a href="../interfaces/entities.itaskitem.html">ITaskItem</a>.<a href="../interfaces/entities.itaskitem.html#content">content</a></p>
 						<p>Inherited from <a href="entities.task.html">Task</a>.<a href="entities.task.html#content">content</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/core/Entities/ITaskItem.ts#L56">core/Entities/ITaskItem.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L63">core/Entities/ITaskItem.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +224,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/entities.iperiodlimit.html">IPeriodLimit</a>.<a href="../interfaces/entities.iperiodlimit.html#finishdate">finishDate</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/core/Entities/ITaskItem.ts#L84">core/Entities/ITaskItem.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L93">core/Entities/ITaskItem.ts:93</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +236,19 @@
 						<p>Implementation of <a href="../interfaces/entities.itaskitem.html">ITaskItem</a>.<a href="../interfaces/entities.itaskitem.html#id">id</a></p>
 						<p>Inherited from <a href="entities.task.html">Task</a>.<a href="entities.task.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/core/Entities/ITaskItem.ts#L55">core/Entities/ITaskItem.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L62">core/Entities/ITaskItem.ts:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="owner" class="tsd-anchor"></a>
+					<h3>owner</h3>
+					<div class="tsd-signature tsd-kind-icon">owner<span class="tsd-signature-symbol">:</span> <a href="../interfaces/entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/entities.iownership.html">IOwnership</a>.<a href="../interfaces/entities.iownership.html#owner">owner</a></p>
+						<p>Inherited from <a href="entities.task.html">Task</a>.<a href="entities.task.html#owner">owner</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L65">core/Entities/ITaskItem.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +260,7 @@
 						<p>Implementation of <a href="../interfaces/entities.itaskitem.html">ITaskItem</a>.<a href="../interfaces/entities.itaskitem.html#status">status</a></p>
 						<p>Inherited from <a href="entities.task.html">Task</a>.<a href="entities.task.html#status">status</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/core/Entities/ITaskItem.ts#L57">core/Entities/ITaskItem.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L64">core/Entities/ITaskItem.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -262,7 +279,7 @@
 								<p>Implementation of <a href="../interfaces/entities.itaskitem.html">ITaskItem</a>.<a href="../interfaces/entities.itaskitem.html#toggle">toggle</a></p>
 								<p>Inherited from <a href="entities.task.html">Task</a>.<a href="entities.task.html#toggle">toggle</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/core/Entities/ITaskItem.ts#L66">core/Entities/ITaskItem.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/core/Entities/ITaskItem.ts#L75">core/Entities/ITaskItem.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,6 +339,9 @@
 								<a href="entities.periodtask.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="entities.periodtask.html#owner" class="tsd-kind-icon">owner</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="entities.periodtask.html#status" class="tsd-kind-icon">status</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -335,10 +355,19 @@
 						<a href="entities.task.html" class="tsd-kind-icon">Task</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="entities.taskowner.html" class="tsd-kind-icon">Task<wbr>Owner</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="entities.texttask.html" class="tsd-kind-icon">Text<wbr>Task</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/entities.icustormer.html" class="tsd-kind-icon">ICustormer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/entities.ilockable.html" class="tsd-kind-icon">ILockable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/entities.iownership.html" class="tsd-kind-icon">IOwnership</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/entities.iperiodlimit.html" class="tsd-kind-icon">IPeriod<wbr>Limit</a>
@@ -348,6 +377,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/entities.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/entities.itaskowner.html" class="tsd-kind-icon">ITask<wbr>Owner</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/entities.html#mediatasktype" class="tsd-kind-icon">Media<wbr>Task<wbr>Type</a>

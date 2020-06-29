@@ -1,0 +1,19 @@
+@startuml
+hide empty methods
+hide empty fields
+interface "ITaskOwner" {
+    +friends : Array<ITaskOwner>
+    +id : string
+    +ownedTasks : Array<ITaskItem>
+}
+interface "ICustormer" {
+    +id : string
+}
+"ICustormer" <|-- "ITaskOwner"
+class "TaskOwner" {
+    +friends : ITaskOwner[]
+    +id : string
+    +ownedTasks : ITaskItem[]
+}
+"ITaskOwner" <|.. "TaskOwner"
+@enduml

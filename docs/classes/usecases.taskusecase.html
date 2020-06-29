@@ -71,8 +71,8 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-hierarchy-diagram">
                         <h3>Hierarchy-Diagram</h3>
-                        <a class="diagram" href="../assets/images/TaskUsecase-umlClassDiagram-184.svg" title="Click to enlarge">
-                            <img src="../assets/images/TaskUsecase-umlClassDiagram-184.svg"
+                        <a class="diagram" href="../assets/images/TaskUsecase-umlClassDiagram-213.svg" title="Click to enlarge">
+                            <img src="../assets/images/TaskUsecase-umlClassDiagram-213.svg"
                                  alt="UML class diagram of TaskUsecase" />
                         </a>
                         <h4>Legend</h4>
@@ -142,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/UseCases/ITaskUsecase.ts#L12">UseCases/ITaskUsecase.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/UseCases/ITaskUsecase.ts#L14">UseCases/ITaskUsecase.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">api<span class="tsd-signature-symbol">:</span> <a href="../interfaces/api.itaskapi.html" class="tsd-signature-type">ITaskAPI</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/UseCases/ITaskUsecase.ts#L14">UseCases/ITaskUsecase.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/UseCases/ITaskUsecase.ts#L16">UseCases/ITaskUsecase.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">repo<span class="tsd-signature-symbol">:</span> <a href="../interfaces/repository.itaskrepository.html" class="tsd-signature-type">ITaskRepository</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/UseCases/ITaskUsecase.ts#L14">UseCases/ITaskUsecase.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/UseCases/ITaskUsecase.ts#L16">UseCases/ITaskUsecase.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,14 +188,14 @@
 					<a name="createtask" class="tsd-anchor"></a>
 					<h3>create<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../modules/entities.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a>, finishDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Task<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../modules/entities.html#taskcontenttype" class="tsd-signature-type">TaskContentType</a>, finishDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, owner<span class="tsd-signature-symbol">?: </span><a href="../interfaces/entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/usecases.itaskusecase.html">ITaskUsecase</a>.<a href="../interfaces/usecases.itaskusecase.html#createtask">createTask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/23d8dc6/src/UseCases/ITaskUsecase.ts#L15">UseCases/ITaskUsecase.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/bfd4e7a/src/UseCases/ITaskUsecase.ts#L17">UseCases/ITaskUsecase.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,6 +205,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> finishDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> owner: <a href="../interfaces/entities.itaskowner.html" class="tsd-signature-type">ITaskOwner</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
