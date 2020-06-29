@@ -4,13 +4,13 @@ hide empty fields
 interface "IOwnership" {
     +owner : ITaskOwner | null
 }
-class "Task" {
+class "PeriodTask" {
     +content : T
+    +finishDate : Date | null
     +id : string
     +owner : ITaskOwner | null
     +status : ETaskStatus
-    -setStatus(s: ETaskStatus) : void
     +toggle() : void
 }
-"IOwnership" <|.. "Task"
+"IOwnership" <|.. "PeriodTask"
 @enduml

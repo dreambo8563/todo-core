@@ -5,5 +5,9 @@
     "name":"todo-core API Documentation",
     "external-modulemap": ".*\/([\\w\\-_]+)\/",
     "umlClassDiagramLegendType":"only-included",
-    "umlClassDiagramCreatePlantUmlFiles":true
+    "umlClassDiagramCreatePlantUmlFiles":true,
+    "includeDeclarations":true,
+    "excludeExternals":true,
+    "categorizeByGroup":true,
+    "hideGenerator":true
   }

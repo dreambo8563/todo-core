@@ -12,7 +12,6 @@ class "PeriodTask" {
 class "Task" {
     +content : T
     +id : string
-    +owner : ITaskOwner | null
     +status : ETaskStatus
     -setStatus(s: ETaskStatus) : void
     +toggle() : void
@@ -22,6 +21,10 @@ interface "IPeriodLimit" {
     +finishDate : Date | null
 }
 "IPeriodLimit" <|.. "PeriodTask"
+interface "IOwnership" {
+    +owner : ITaskOwner | null
+}
+"IOwnership" <|.. "PeriodTask"
 class "TextTask" {
     +content : TextTaskType
     +finishDate : Date | null

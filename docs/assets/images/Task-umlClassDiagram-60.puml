@@ -4,7 +4,6 @@ hide empty fields
 class "Task" {
     +content : T
     +id : string
-    +owner : ITaskOwner | null
     +status : ETaskStatus
     -setStatus(s: ETaskStatus) : void
     +toggle() : void
@@ -16,10 +15,6 @@ interface "ITaskItem" {
     +toggle() : void
 }
 "ITaskItem" <|.. "Task"
-interface "IOwnership" {
-    +owner : ITaskOwner | null
-}
-"IOwnership" <|.. "Task"
 class "PeriodTask" {
     +content : T
     +finishDate : Date | null
