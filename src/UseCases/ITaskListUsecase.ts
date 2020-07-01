@@ -1,5 +1,5 @@
 import { ITaskItem } from '../core/Entities/ITaskItem';
-import { ITaskLiskRepository } from '../Interface/Repository/TaskListRepository';
+import { ITaskListRepository } from '../core/Repository/TaskListRepository';
 
 // task list use cases
 export interface ITaskListUsecase {
@@ -12,7 +12,7 @@ export interface ITaskListUsecase {
 
 export class TaskListUsecase implements ITaskListUsecase {
   //* Dependency Injection - API service...
-  constructor(private repo: ITaskLiskRepository) {}
+  constructor(private repo: ITaskListRepository) {}
   updateTask(id: string, t: ITaskItem): Array<ITaskItem> {
     return this.repo.updateTask(id, t);
   }

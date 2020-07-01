@@ -94,11 +94,13 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.iplayable.html" class="tsd-kind-icon">IPlayable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.itaskitem.html" class="tsd-kind-icon">ITask<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.itaskowner.html" class="tsd-kind-icon">ITask<wbr>Owner</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/entities.itransfertask.html" class="tsd-kind-icon">ITransfer<wbr>Task</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="entities.html#iperiodtask" class="tsd-kind-icon">IPeriod<wbr>Task</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="entities.html#mediatasktype" class="tsd-kind-icon">Media<wbr>Task<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="entities.html#taskcontenttype" class="tsd-kind-icon">Task<wbr>Content<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="entities.html#texttasktype" class="tsd-kind-icon">Text<wbr>Task<wbr>Type</a></li>
@@ -110,12 +112,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="iperiodtask" class="tsd-anchor"></a>
+					<h3>IPeriod<wbr>Task</h3>
+					<div class="tsd-signature tsd-kind-icon">IPeriod<wbr>Task<span class="tsd-signature-symbol">:</span> <a href="../interfaces/entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/entities.iownership.html" class="tsd-signature-type">IOwnership</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/entities.iperiodlimit.html" class="tsd-signature-type">IPeriodLimit</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Entities/ITaskItem.ts#L32">core/Entities/ITaskItem.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="mediatasktype" class="tsd-anchor"></a>
 					<h3>Media<wbr>Task<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">Media<wbr>Task<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">URL</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/3f6effd/src/core/Entities/ITaskItem.ts#L38">core/Entities/ITaskItem.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Entities/ITaskItem.ts#L40">core/Entities/ITaskItem.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">Task<wbr>Content<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="entities.html#texttasktype" class="tsd-signature-type">TextTaskType</a><span class="tsd-signature-symbol"> | </span><a href="entities.html#mediatasktype" class="tsd-signature-type">MediaTaskType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/3f6effd/src/core/Entities/ITaskItem.ts#L39">core/Entities/ITaskItem.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Entities/ITaskItem.ts#L41">core/Entities/ITaskItem.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -140,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">Text<wbr>Task<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/3f6effd/src/core/Entities/ITaskItem.ts#L34">core/Entities/ITaskItem.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Entities/ITaskItem.ts#L36">core/Entities/ITaskItem.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,14 +169,23 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="api.html">API</a>
-					</li>
 					<li class="current tsd-kind-module">
 						<a href="entities.html">Entities</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="http.html">Http</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="iservices.html">IServices</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="memory.html">Memory</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="repository.html">Repository</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="services.html">Services</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="usecases.html">Use<wbr>Cases</a>
@@ -211,6 +232,12 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/entities.itaskowner.html" class="tsd-kind-icon">ITask<wbr>Owner</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/entities.itransfertask.html" class="tsd-kind-icon">ITransfer<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="entities.html#iperiodtask" class="tsd-kind-icon">IPeriod<wbr>Task</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="entities.html#mediatasktype" class="tsd-kind-icon">Media<wbr>Task<wbr>Type</a>

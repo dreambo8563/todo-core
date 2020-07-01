@@ -1,19 +1,15 @@
+import { TaskOwner } from '../src/core/Entities/ICustomer';
+import { AudioTask } from '../src/core/Entities/ITaskItem';
+import { TaskListRepository } from '../src/Interface/Memory/TaskLiskRepository';
 import { TaskListUsecase } from '../src/UseCases/ITaskListUsecase';
 import { TaskUsecase } from '../src/UseCases/ITaskUsecase';
-import { TaskAPI } from '../src/Interface/API/TaskAPI';
-import { TaskRepository } from '../src/Interface/Repository/TaskRepository';
-import { AudioTask } from '../src/core/Entities/ITaskItem';
-import { TaskListRepository } from '../src/Interface/Repository/TaskListRepository';
-
 import mockRes from './utils/mockResponse';
-import { TaskOwner } from '../src/core/Entities/ICustomer';
+
 jest.mock('node-fetch');
 
 describe('tasklist', () => {
   it('add task', async () => {
-    const api = TaskAPI.getInstance();
-    const repo = new TaskRepository();
-    const taskService = new TaskUsecase(api, repo);
+    const taskService = new TaskUsecase();
     mockRes({
       id: '1',
       content: '1111',
@@ -37,9 +33,7 @@ describe('tasklist', () => {
     expect(list.length).toEqual(2);
   });
   it('add audio task', async () => {
-    const api = TaskAPI.getInstance();
-    const repo = new TaskRepository();
-    const taskService = new TaskUsecase(api, repo);
+    const taskService = new TaskUsecase();
     const todo = (await taskService.createTask(
       new URL('http://www.baidu.com.xx.mp4'),
       null
@@ -56,9 +50,7 @@ describe('tasklist', () => {
     expect(list.length).toEqual(2);
   });
   it('add audio task', async () => {
-    const api = TaskAPI.getInstance();
-    const repo = new TaskRepository();
-    const taskService = new TaskUsecase(api, repo);
+    const taskService = new TaskUsecase();
     const todo = (await taskService.createTask(
       new URL('http://www.baidu.com.xx.mp4'),
       null
@@ -76,9 +68,7 @@ describe('tasklist', () => {
   });
 
   it('get task', async () => {
-    const api = TaskAPI.getInstance();
-    const repo = new TaskRepository();
-    const taskService = new TaskUsecase(api, repo);
+    const taskService = new TaskUsecase();
     mockRes({
       id: '1',
       content: '1111',
@@ -98,9 +88,7 @@ describe('tasklist', () => {
     expect(nothing).toBeNull();
   });
   it('del task', async () => {
-    const api = TaskAPI.getInstance();
-    const repo = new TaskRepository();
-    const taskService = new TaskUsecase(api, repo);
+    const taskService = new TaskUsecase();
     mockRes({
       id: '1',
       content: '1111',
@@ -120,9 +108,7 @@ describe('tasklist', () => {
   });
 
   it('update task', async () => {
-    const api = TaskAPI.getInstance();
-    const repo = new TaskRepository();
-    const taskService = new TaskUsecase(api, repo);
+    const taskService = new TaskUsecase();
     mockRes({
       id: '1',
       content: '1111',

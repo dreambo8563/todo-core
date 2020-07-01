@@ -11,9 +11,9 @@ interface "ICustormer" {
 }
 "ICustormer" <|-- "ITaskOwner"
 class "TaskOwner" {
-    +friends : ITaskOwner[]
+    +friends : Array<ITaskOwner>
     +id : string
-    +ownedTasks : ITaskItem[]
+    +ownedTasks : Array<ITaskItem>
 }
 "ITaskOwner" <|.. "TaskOwner"
 @enduml

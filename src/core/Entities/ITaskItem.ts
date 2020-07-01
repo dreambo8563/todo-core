@@ -28,6 +28,8 @@ export interface IOwnership {
 export interface ILockable {
   locked: boolean;
 }
+
+export type IPeriodTask = ITaskItem & IOwnership & IPeriodLimit;
 /**
  * 内容为string 类型的 task
  */

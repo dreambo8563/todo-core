@@ -1,0 +1,12 @@
+@startuml
+hide empty methods
+hide empty fields
+interface "ITaskTransfer" {
+    +transfer(t: IPeriodTask, o: ITaskOwner) : void
+}
+class "TaskTransfer" {
+    -repo : ITaskListRepository
+    +transfer(t: IPeriodTask, o: ITaskOwner) : void
+}
+"ITaskTransfer" <|.. "TaskTransfer"
+@enduml
