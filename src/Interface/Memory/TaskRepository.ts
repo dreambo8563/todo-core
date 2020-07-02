@@ -5,7 +5,7 @@ import {
   AudioTask,
 } from '../../core/Entities/ITaskItem';
 import { ITaskOwner } from '../../core/Entities/ICustomer';
-import { ITaskRepository } from '../../core/Repository/TaskRepository';
+import { ITaskRepository } from '../../core/Repository/ITaskRepository';
 
 export class TaskRepository implements ITaskRepository {
   createTask(

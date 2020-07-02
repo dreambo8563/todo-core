@@ -1,7 +1,7 @@
 import { TaskContentType, ITaskItem } from '../core/Entities/ITaskItem';
 import { ITaskAPI, TaskAPI } from '../Interface/Http/TaskAPI';
 import { ITaskOwner } from '../core/Entities/ICustomer';
-import { ITaskRepository } from '../core/Repository/TaskRepository';
+import { ITaskRepository } from '../core/Repository/ITaskRepository';
 import { ITaskTransfer } from '../core/IServices/ITaskTransfer';
 import { TaskTransfer } from '../Interface/Services/TaskTransfer';
 import { TaskListRepository } from '../Interface/Memory/TaskLiskRepository';
@@ -18,17 +18,6 @@ export interface ITaskUsecase {
 type ITaskService = { api: ITaskAPI; transferS: ITaskTransfer };
 export class TaskUsecase implements ITaskUsecase {
   //* Dependency Injection - API/cache/log service...
-  // static getInstance() {
-  //   const listRepo = new TaskListRepository();
-  //   const repo = new TaskRepository();
-  //   return new TaskUsecase(
-  //     {
-  //       api: TaskAPI.getInstance(),
-  //       transferS: new TaskTransfer(listRepo),
-  //     },
-  //     repo
-  //   );
-  // }
   private s: ITaskService;
   private repo: ITaskRepository;
   constructor(s?: ITaskService, repo?: ITaskRepository) {
