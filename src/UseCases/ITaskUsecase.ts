@@ -17,11 +17,11 @@ export interface ITaskUsecase {
 
 type ITaskService = { api: ITaskAPI; transferS: ITaskTransfer };
 export class TaskUsecase implements ITaskUsecase {
-  //* Dependency Injection - API/cache/log service...
   private s: ITaskService;
   private repo: ITaskRepository;
-  constructor(s?: ITaskService, repo?: ITaskRepository) {
-    // default injection
+  constructor(s?: ITaskService | null, repo?: ITaskRepository) {
+    //* Dependency Injection - API/cache/log service...
+    //* default injection
     this.s = s ?? {
       api: TaskAPI.getInstance(),
       transferS: new TaskTransfer(new TaskListRepository()),

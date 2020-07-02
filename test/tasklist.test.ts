@@ -4,6 +4,8 @@ import { TaskListRepository } from '../src/Interface/Memory/TaskLiskRepository';
 import { TaskListUsecase } from '../src/UseCases/ITaskListUsecase';
 import { TaskUsecase } from '../src/UseCases/ITaskUsecase';
 import mockRes from './utils/mockResponse';
+// import { TaskAPI } from '../src/Interface/Http/TaskAPI';
+// import { TaskTransfer } from '../src/Interface/Services/TaskTransfer';
 
 jest.mock('node-fetch');
 
@@ -130,5 +132,12 @@ describe('tasklist', () => {
     );
     list = taskListService.updateTask('1', newTodo);
     expect(list[0].content.toString()).toEqual('project1- task1');
+  });
+
+  it('create new instance task list', async () => {
+    const repo = new TaskListRepository();
+    repo.taskList = [];
+    const instance = repo.instance();
+    new TaskListUsecase(instance);
   });
 });
