@@ -2,16 +2,14 @@ import { TaskOwner } from '../src/core/Entities/ICustomer';
 import { AudioTask } from '../src/core/Entities/ITaskItem';
 import { TaskListRepository } from '../src/Interface/Memory/TaskLiskRepository';
 import { TaskListUsecase } from '../src/UseCases/ITaskListUsecase';
-import { TaskUsecase } from '../src/UseCases/ITaskUsecase';
+import { TaskUsecaseFactory } from '../src/UseCases/ITaskUsecase';
 import mockRes from './utils/mockResponse';
-// import { TaskAPI } from '../src/Interface/Http/TaskAPI';
-// import { TaskTransfer } from '../src/Interface/Services/TaskTransfer';
 
 jest.mock('node-fetch');
 
 describe('tasklist', () => {
   it('add task', async () => {
-    const taskService = new TaskUsecase();
+    const taskService = TaskUsecaseFactory.create();
     mockRes({
       id: '1',
       content: '1111',
@@ -35,7 +33,7 @@ describe('tasklist', () => {
     expect(list.length).toEqual(2);
   });
   it('add audio task', async () => {
-    const taskService = new TaskUsecase();
+    const taskService = TaskUsecaseFactory.create();
     const todo = (await taskService.createTask(
       new URL('http://www.baidu.com.xx.mp4'),
       null
@@ -52,7 +50,7 @@ describe('tasklist', () => {
     expect(list.length).toEqual(2);
   });
   it('add audio task', async () => {
-    const taskService = new TaskUsecase();
+    const taskService = TaskUsecaseFactory.create();
     const todo = (await taskService.createTask(
       new URL('http://www.baidu.com.xx.mp4'),
       null
@@ -70,7 +68,7 @@ describe('tasklist', () => {
   });
 
   it('get task', async () => {
-    const taskService = new TaskUsecase();
+    const taskService = TaskUsecaseFactory.create();
     mockRes({
       id: '1',
       content: '1111',
@@ -90,7 +88,7 @@ describe('tasklist', () => {
     expect(nothing).toBeNull();
   });
   it('del task', async () => {
-    const taskService = new TaskUsecase();
+    const taskService = TaskUsecaseFactory.create();
     mockRes({
       id: '1',
       content: '1111',
@@ -110,7 +108,7 @@ describe('tasklist', () => {
   });
 
   it('update task', async () => {
-    const taskService = new TaskUsecase();
+    const taskService = TaskUsecaseFactory.create();
     mockRes({
       id: '1',
       content: '1111',

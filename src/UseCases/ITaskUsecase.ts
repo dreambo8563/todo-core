@@ -17,16 +17,8 @@ export interface ITaskUsecase {
 
 type ITaskService = { api: ITaskAPI; transferS: ITaskTransfer };
 export class TaskUsecase implements ITaskUsecase {
-  private s: ITaskService;
-  private repo: ITaskRepository;
-  constructor(s?: ITaskService | null, repo?: ITaskRepository) {
+  constructor(private s: ITaskService, private repo: ITaskRepository) {
     //* Dependency Injection - API/cache/log service...
-    //* default injection
-    this.s = s ?? {
-      api: TaskAPI.getInstance(),
-      transferS: new TaskTransfer(new TaskListRepository()),
-    };
-    this.repo = repo ?? new TaskRepository();
   }
   async createTask(
     content: TaskContentType,
@@ -37,5 +29,17 @@ export class TaskUsecase implements ITaskUsecase {
     const res = await this.s.api.createTask(content);
     const id = res.id;
     return this.repo.createTask(id, content, finishDate, owner);
+  }
+}
+
+export class TaskUsecaseFactory {
+  public static create(): TaskUsecase {
+    return new TaskUsecase(
+      {
+        api: TaskAPI.getInstance(),
+        transferS: new TaskTransfer(new TaskListRepository()),
+      },
+      new TaskRepository()
+    );
   }
 }

@@ -6,11 +6,7 @@ import {
   ETaskStatus,
 } from '../src/core/Entities/ITaskItem';
 import { TaskOwner } from '../src/core/Entities/ICustomer';
-import { TaskUsecase } from '../src/UseCases/ITaskUsecase';
-import { TaskAPI } from '../src/Interface/Http/TaskAPI';
-import { TaskTransfer } from '../src/Interface/Services/TaskTransfer';
-import { TaskListRepository } from '../src/Interface/Memory/TaskLiskRepository';
-import { TaskRepository } from '../src/Interface/Memory/TaskRepository';
+import { TaskUsecaseFactory } from '../src/UseCases/ITaskUsecase';
 
 describe('task', () => {
   it('constructor', () => {
@@ -54,11 +50,6 @@ describe('task', () => {
     expect(consoleSpy).toHaveBeenCalledTimes(3);
   });
   it('task usecase', () => {
-    new TaskUsecase();
-    new TaskUsecase({
-      api: TaskAPI.getInstance(),
-      transferS: new TaskTransfer(new TaskListRepository()),
-    });
-    new TaskUsecase(null, new TaskRepository());
+    TaskUsecaseFactory.create();
   });
 });
