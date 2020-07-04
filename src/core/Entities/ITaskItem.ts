@@ -104,6 +104,21 @@ export class PeriodTask<T extends TaskContentType> extends Task<T>
     this.owner = owner;
   }
 }
+export class PeriodTaskFactory {
+  public static create(
+    id: string,
+    content: TaskContentType,
+    finishDate: Date | null,
+    owner: ITaskOwner | null
+  ): ITaskItem {
+    if (typeof content === 'string') {
+      //* Factory Pattern
+      return new TextTask(id, content, finishDate, owner) as TextTask;
+    } else {
+      return new AudioTask(id, content, finishDate, owner) as AudioTask;
+    }
+  }
+}
 export class TextTask extends PeriodTask<TextTaskType> {
   // constructor(id: string, content: TextTaskType) {
   //   super(id, content);

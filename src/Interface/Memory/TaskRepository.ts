@@ -1,8 +1,7 @@
 import {
   TaskContentType,
   ITaskItem,
-  TextTask,
-  AudioTask,
+  PeriodTaskFactory,
 } from '../../core/Entities/ITaskItem';
 import { ITaskOwner } from '../../core/Entities/ICustomer';
 import { ITaskRepository } from '../../core/Repository/ITaskRepository';
@@ -14,11 +13,6 @@ export class TaskRepository implements ITaskRepository {
     finishDate: Date | null,
     owner: ITaskOwner | null
   ): ITaskItem {
-    if (typeof content === 'string') {
-      //* Factory Pattern
-      return new TextTask(id, content, finishDate, owner) as TextTask;
-    } else {
-      return new AudioTask(id, content, finishDate, owner) as AudioTask;
-    }
+    return PeriodTaskFactory.create(id, content, finishDate, owner);
   }
 }
