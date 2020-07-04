@@ -50,6 +50,7 @@
     }
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "shallow-equal-object": "^1.1.1"
   }
 }
