@@ -69,8 +69,8 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-hierarchy-diagram">
                         <h3>Hierarchy-Diagram</h3>
-                        <a class="diagram" href="../assets/images/ITaskListRepository-umlClassDiagram-133.svg" title="Click to enlarge">
-                            <img src="../assets/images/ITaskListRepository-umlClassDiagram-133.svg"
+                        <a class="diagram" href="../assets/images/ITaskListRepository-umlClassDiagram-169.svg" title="Click to enlarge">
+                            <img src="../assets/images/ITaskListRepository-umlClassDiagram-169.svg"
                                  alt="UML class diagram of ITaskListRepository" />
                         </a>
                         <h4>Legend</h4>
@@ -121,6 +121,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="repository.itasklistrepository.html#addtask" class="tsd-kind-icon">add<wbr>Task</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="repository.itasklistrepository.html#deltask" class="tsd-kind-icon">del<wbr>Task</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="repository.itasklistrepository.html#gettask" class="tsd-kind-icon">get<wbr>Task</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="repository.itasklistrepository.html#instance" class="tsd-kind-icon">instance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="repository.itasklistrepository.html#updatetask" class="tsd-kind-icon">update<wbr>Task</a></li>
 							</ul>
 						</section>
@@ -135,7 +136,7 @@
 					<div class="tsd-signature tsd-kind-icon">task<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Repository/TaskListRepository.ts#L8">core/Repository/TaskListRepository.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/0d2f76d/src/core/Repository/ITaskListRepository.ts#L9">core/Repository/ITaskListRepository.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,13 +147,13 @@
 					<a name="addtask" class="tsd-anchor"></a>
 					<h3>add<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Task<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Task<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Repository/TaskListRepository.ts#L4">core/Repository/TaskListRepository.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/0d2f76d/src/core/Repository/ITaskListRepository.ts#L5">core/Repository/ITaskListRepository.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -161,7 +162,7 @@
 									<h5>t: <a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,13 +170,13 @@
 					<a name="deltask" class="tsd-anchor"></a>
 					<h3>del<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">del<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">del<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Repository/TaskListRepository.ts#L6">core/Repository/TaskListRepository.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/0d2f76d/src/core/Repository/ITaskListRepository.ts#L7">core/Repository/ITaskListRepository.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -184,7 +185,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -198,7 +199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Repository/TaskListRepository.ts#L5">core/Repository/TaskListRepository.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/0d2f76d/src/core/Repository/ITaskListRepository.ts#L6">core/Repository/ITaskListRepository.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -212,16 +213,39 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="updatetask" class="tsd-anchor"></a>
-					<h3>update<wbr>Task</h3>
+					<a name="instance" class="tsd-anchor"></a>
+					<h3>instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, t<span class="tsd-signature-symbol">: </span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/9453afe/src/core/Repository/TaskListRepository.ts#L7">core/Repository/TaskListRepository.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/0d2f76d/src/core/Repository/ITaskListRepository.ts#L4">core/Repository/ITaskListRepository.ts:4</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="updatetask" class="tsd-anchor"></a>
+					<h3>update<wbr>Task</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Task<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, t<span class="tsd-signature-symbol">: </span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dreambo8563/todo-core/blob/0d2f76d/src/core/Repository/ITaskListRepository.ts#L8">core/Repository/ITaskListRepository.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -233,7 +257,7 @@
 									<h5>t: <a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="entities.itaskitem.html" class="tsd-signature-type">ITaskItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="repository.itasklistrepository.html" class="tsd-signature-type">ITaskListRepository</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -266,6 +290,12 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/usecases.html">Use<wbr>Cases</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/valueobject.html">Value<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/shared.html">shared</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -288,6 +318,9 @@
 								<a href="repository.itasklistrepository.html#gettask" class="tsd-kind-icon">get<wbr>Task</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="repository.itasklistrepository.html#instance" class="tsd-kind-icon">instance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="repository.itasklistrepository.html#updatetask" class="tsd-kind-icon">update<wbr>Task</a>
 							</li>
 						</ul>
@@ -307,6 +340,12 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
@@ -314,9 +353,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

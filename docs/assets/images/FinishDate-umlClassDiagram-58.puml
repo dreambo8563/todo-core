@@ -1,0 +1,14 @@
+@startuml
+hide empty methods
+hide empty fields
+class "FinishDate" {
+    +props : FinishDateProps
+    +equals(vo: ValueObject<FinishDateProps>) : boolean
+    {static} +create(finishDate: Date | null) : FinishDate
+}
+abstract class "ValueObject" {
+    +props : T
+    +equals(vo: ValueObject<T>) : boolean
+}
+"ValueObject" <|-- "FinishDate"
+@enduml

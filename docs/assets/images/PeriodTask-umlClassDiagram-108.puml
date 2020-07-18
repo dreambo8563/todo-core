@@ -1,0 +1,49 @@
+@startuml
+hide empty methods
+hide empty fields
+class "PeriodTask" {
+    +content : T
+    +finishDate : FinishDate
+    +id : string
+    +owner : ITaskOwner | null
+    +status : ETaskStatus
+    +toggle() : void
+}
+class "Task" {
+    +content : T
+    +id : string
+    +status : ETaskStatus
+    -setStatus(s: ETaskStatus) : void
+    +toggle() : void
+}
+"Task" <|-- "PeriodTask"
+interface "IPeriodLimit" {
+    +finishDate : FinishDate
+}
+"IPeriodLimit" <|.. "PeriodTask"
+interface "IOwnership" {
+    +owner : ITaskOwner | null
+}
+"IOwnership" <|.. "PeriodTask"
+class "TextTask" {
+    +content : TextTaskType
+    +finishDate : FinishDate
+    +id : string
+    +owner : ITaskOwner | null
+    +status : ETaskStatus
+    +toggle() : void
+}
+"PeriodTask" <|-- "TextTask"
+class "AudioTask" {
+    +content : MediaTaskType
+    +finishDate : FinishDate
+    +id : string
+    +owner : ITaskOwner | null
+    +status : ETaskStatus
+    +pause() : void
+    +play() : void
+    +stop() : void
+    +toggle() : void
+}
+"PeriodTask" <|-- "AudioTask"
+@enduml

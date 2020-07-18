@@ -1,0 +1,21 @@
+@startuml
+hide empty methods
+hide empty fields
+interface "ITaskListRepository" {
+    +taskList : Array<ITaskItem>
+    +addTask(t: ITaskItem) : ITaskListRepository
+    +delTask(id: string) : ITaskListRepository
+    +getTask(id: string) : ITaskItem | null
+    +instance(list: Array<ITaskItem>) : ITaskListRepository
+    +updateTask(id: string, t: ITaskItem) : ITaskListRepository
+}
+class "TaskListRepository" {
+    -_taskList : Array<ITaskItem>
+    +addTask(t: ITaskItem) : this
+    +delTask(id: string) : this
+    +getTask(id: string) : ITaskItem | null
+    +instance(list: Array<ITaskItem>) : TaskListRepository<>
+    +updateTask(id: string, t: ITaskItem) : this
+}
+"ITaskListRepository" <|.. "TaskListRepository"
+@enduml

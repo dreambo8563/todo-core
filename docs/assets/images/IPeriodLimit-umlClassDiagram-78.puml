@@ -1,0 +1,16 @@
+@startuml
+hide empty methods
+hide empty fields
+interface "IPeriodLimit" {
+    +finishDate : FinishDate
+}
+class "PeriodTask" {
+    +content : T
+    +finishDate : FinishDate
+    +id : string
+    +owner : ITaskOwner | null
+    +status : ETaskStatus
+    +toggle() : void
+}
+"IPeriodLimit" <|.. "PeriodTask"
+@enduml
