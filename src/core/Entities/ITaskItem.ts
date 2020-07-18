@@ -1,4 +1,5 @@
 import { ITaskOwner } from './ICustomer';
+import { FinishDate } from '../ValueObject/FinishDate';
 
 /**
  *
@@ -16,7 +17,7 @@ export interface ITaskItem {
  * 可以扩展为有结束日期类型的 task
  */
 export interface IPeriodLimit {
-  finishDate?: Date | null;
+  finishDate?: FinishDate;
 }
 /**
  * 可以用来扩展为能够锁定(只读)的 task
@@ -91,7 +92,7 @@ export class Task<T extends TaskContentType> implements ITaskItem {
  */
 export class PeriodTask<T extends TaskContentType> extends Task<T>
   implements IPeriodLimit, IOwnership {
-  finishDate: Date | null = null;
+  finishDate: FinishDate;
   owner: ITaskOwner | null = null;
   constructor(
     id: string,
@@ -100,7 +101,7 @@ export class PeriodTask<T extends TaskContentType> extends Task<T>
     owner: ITaskOwner | null = null
   ) {
     super(id, content);
-    this.finishDate = finishDate;
+    this.finishDate = FinishDate.create(finishDate);
     this.owner = owner;
   }
 }
