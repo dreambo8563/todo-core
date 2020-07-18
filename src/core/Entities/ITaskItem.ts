@@ -92,6 +92,7 @@ export class Task<T extends TaskContentType> implements ITaskItem {
  */
 export class PeriodTask<T extends TaskContentType> extends Task<T>
   implements IPeriodLimit, IOwnership {
+  //FIXME: should not have reference of other entity, Aggregates
   finishDate: FinishDate;
   owner: ITaskOwner | null = null;
   constructor(

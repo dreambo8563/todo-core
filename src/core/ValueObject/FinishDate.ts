@@ -16,6 +16,7 @@ export class FinishDate extends ValueObject<FinishDateProps> {
 
   public static create(finishDate: Date | null): FinishDate {
     if (finishDate && finishDate.getTime() < Date.now()) {
+      //FIXME: should refactor with
       throw new Error('finishDate is not allowed earlier than now');
     } else {
       return new FinishDate({ value: finishDate });

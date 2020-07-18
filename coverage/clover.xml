@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595084969291" clover="3.2.0">
-  <project timestamp="1595084969291" name="All files">
-    <metrics statements="114" coveredstatements="87" conditionals="54" coveredconditionals="31" methods="45" coveredmethods="37" elements="213" coveredelements="155" complexity="0" loc="114" ncloc="114" packages="7" files="11" classes="11"/>
+<coverage generated="1595094782011" clover="3.2.0">
+  <project timestamp="1595094782011" name="All files">
+    <metrics statements="146" coveredstatements="87" conditionals="72" coveredconditionals="31" methods="59" coveredmethods="37" elements="277" coveredelements="155" complexity="0" loc="146" ncloc="146" packages="7" files="12" classes="12"/>
     <package name="Interface.Http">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="TaskAPI.ts" path="/Users/vincent/Documents/Vincent/TypeScript/todo-core/src/Interface/Http/TaskAPI.ts">
@@ -109,19 +109,19 @@
         <line num="78" count="2" type="stmt"/>
         <line num="86" count="2" type="stmt"/>
         <line num="93" count="2" type="stmt"/>
-        <line num="96" count="15" type="stmt"/>
-        <line num="103" count="15" type="stmt"/>
+        <line num="97" count="15" type="stmt"/>
         <line num="104" count="15" type="stmt"/>
         <line num="105" count="15" type="stmt"/>
-        <line num="108" count="2" type="stmt"/>
-        <line num="115" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="117" count="3" type="stmt"/>
-        <line num="119" count="7" type="stmt"/>
-        <line num="123" count="2" type="stmt"/>
-        <line num="128" count="2" type="stmt"/>
-        <line num="133" count="1" type="stmt"/>
-        <line num="136" count="1" type="stmt"/>
-        <line num="139" count="1" type="stmt"/>
+        <line num="106" count="15" type="stmt"/>
+        <line num="109" count="2" type="stmt"/>
+        <line num="116" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="118" count="3" type="stmt"/>
+        <line num="120" count="7" type="stmt"/>
+        <line num="124" count="2" type="stmt"/>
+        <line num="129" count="2" type="stmt"/>
+        <line num="134" count="1" type="stmt"/>
+        <line num="137" count="1" type="stmt"/>
+        <line num="140" count="1" type="stmt"/>
       </file>
     </package>
     <package name="core.ValueObject">
@@ -133,12 +133,12 @@
         <line num="9" count="0" type="stmt"/>
         <line num="14" count="15" type="stmt"/>
         <line num="18" count="15" type="cond" truecount="3" falsecount="1"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="21" count="15" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="15" type="stmt"/>
       </file>
     </package>
     <package name="shared">
-      <metrics statements="24" coveredstatements="3" conditionals="20" coveredconditionals="0" methods="7" coveredmethods="1"/>
+      <metrics statements="56" coveredstatements="3" conditionals="38" coveredconditionals="0" methods="21" coveredmethods="1"/>
       <file name="Entiry.ts" path="/Users/vincent/Documents/Vincent/TypeScript/todo-core/src/shared/Entiry.ts">
         <metrics statements="16" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
@@ -157,6 +157,41 @@
         <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="39" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
+      </file>
+      <file name="Result.ts" path="/Users/vincent/Documents/Vincent/TypeScript/todo-core/src/shared/Result.ts">
+        <metrics statements="32" coveredstatements="0" conditionals="18" coveredconditionals="0" methods="14" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
       </file>
       <file name="valueObject.ts" path="/Users/vincent/Documents/Vincent/TypeScript/todo-core/src/shared/valueObject.ts">
         <metrics statements="8" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="1"/>
